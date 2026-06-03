@@ -1,18 +1,4 @@
-import { asFixed } from "./utils"
 import type { PathDirection, StickerSource } from "./types"
-
-export const TILE_CENTER = math.Vector3(asFixed(-23.2519999999), asFixed(1), asFixed(0.25))
-export const CAMERA_BIND_MODE_BIND = 1
-export const CAMERA_PROJECTION_ORTHOGRAPHIC = 1
-export const CAMERA_PROP_BIND_MODE_OFFSET_X = 2
-export const CAMERA_PROP_BIND_MODE_OFFSET_Y = 3
-export const CAMERA_PROP_BIND_MODE_OFFSET_Z = 4
-export const CAMERA_PROP_BIND_MODE_PITCH = 5
-export const CAMERA_PROP_BIND_MODE_YAW = 6
-export const CAMERA_PROP_DIST = 7
-export const CAMERA_PROP_ORTHO_VIEW_HEIGHT = 21
-export const ORTHO_VIEW_HEIGHT_FOR_CANVAS_FRAME = 34.1
-export const CAMERA_HEIGHT_FOR_CANVAS_FRAME = 15
 
 export const GRID_COLUMNS = 19
 export const GRID_ROWS = 9
