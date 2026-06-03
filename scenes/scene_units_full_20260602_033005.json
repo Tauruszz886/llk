@@ -1,0 +1,1462 @@
+{
+  "schema": "egg_editor_scene_units_full.v1",
+  "source_schema": "egg_editor_scene_units.v2",
+  "exported_at_unix": 1780370995,
+  "unit_count": 91,
+  "units_by_id": {
+    "1": {
+      "unit_id": 1,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1001": {
+      "unit_id": 1001,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1002": {
+      "unit_id": 1002,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1003": {
+      "unit_id": 1003,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1046549468": {
+      "unit_id": 1046549468,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1049337671": {
+      "unit_id": 1049337671,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1071686662": {
+      "unit_id": 1071686662,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1073545956": {
+      "unit_id": 1073545956,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1077989550": {
+      "unit_id": 1077989550,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1111935546": {
+      "unit_id": 1111935546,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1113527349": {
+      "unit_id": 1113527349,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1129524711": {
+      "unit_id": 1129524711,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1133872834": {
+      "unit_id": 1133872834,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1164709328": {
+      "unit_id": 1164709328,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1178734738": {
+      "unit_id": 1178734738,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1191046992": {
+      "unit_id": 1191046992,
+      "prefab_id": 105700,
+      "name": "LLK_YAxis_bottom_z_min",
+      "attrs": {
+        "BodyType": 0,
+        "Bounciness": 0.0,
+        "CollisionExtraForce": 0,
+        "ForcedType": false,
+        "FrictionCoefficient": 0.3,
+        "LocalCenterOfMass": [
+          0,
+          0,
+          0
+        ],
+        "Mass": 80.0,
+        "MassCenterType": 1,
+        "MassDensity": 1,
+        "MotorOpti": true,
+        "RollingResistance": 0.1,
+        "can_be_mirror_reflected": true,
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "enable_hp": false,
+        "expression_device_list": "table",
+        "extra_special_comp": 0,
+        "fix_destroy_time": -1,
+        "init_model_visible": true,
+        "model": 19000045,
+        "model_alpha": "0.8499999998603",
+        "ob_max_hp": 0,
+        "occlusion_type": 0,
+        "paint_area1": 16228769,
+        "paint_area2": 8837084,
+        "paint_area3": 9633731,
+        "paint_area4": 0,
+        "pattern_color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "physic_enable": false,
+        "receive_shadow": true,
+        "render_condition": 0,
+        "sel_skin": 0,
+        "special_comp": 0,
+        "spline_rope_concentricDistance": 0.0,
+        "spline_rope_layout": 2,
+        "spline_rope_vertices": "table",
+        "touch_enable": false,
+        "use_dynamic_model": true
+      }
+    },
+    "1193608358": {
+      "unit_id": 1193608358,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1204277840": {
+      "unit_id": 1204277840,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1242154569": {
+      "unit_id": 1242154569,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1254695097": {
+      "unit_id": 1254695097,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1279045625": {
+      "unit_id": 1279045625,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1293982738": {
+      "unit_id": 1293982738,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1302698444": {
+      "unit_id": 1302698444,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1335787914": {
+      "unit_id": 1335787914,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1357102836": {
+      "unit_id": 1357102836,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1395899394": {
+      "unit_id": 1395899394,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1399824806": {
+      "unit_id": 1399824806,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1401993508": {
+      "unit_id": 1401993508,
+      "prefab_id": 600005,
+      "name": "分阵营出生点1",
+      "attrs": {
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "default_model_angle": [
+          0,
+          -90,
+          0
+        ],
+        "expression_device_list": "table",
+        "model": 90007,
+        "model_alpha": 1.0,
+        "paint_area1": 5488895,
+        "paint_area2": 16777215,
+        "paint_area3": 16777215,
+        "paint_area4": 16777215,
+        "receive_shadow": true,
+        "sel_skin": 0,
+        "use_camp_color": true,
+        "virtual_point_type": 4
+      }
+    },
+    "1404468527": {
+      "unit_id": 1404468527,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1406126625": {
+      "unit_id": 1406126625,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1413632294": {
+      "unit_id": 1413632294,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1413842355": {
+      "unit_id": 1413842355,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1418247933": {
+      "unit_id": 1418247933,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1423197915": {
+      "unit_id": 1423197915,
+      "prefab_id": 105700,
+      "name": "LLK_YAxis_bottom_x_max",
+      "attrs": {
+        "BodyType": 0,
+        "Bounciness": 0.0,
+        "CollisionExtraForce": 0,
+        "ForcedType": false,
+        "FrictionCoefficient": 0.3,
+        "LocalCenterOfMass": [
+          0,
+          0,
+          0
+        ],
+        "Mass": 80.0,
+        "MassCenterType": 1,
+        "MassDensity": 1,
+        "MotorOpti": true,
+        "RollingResistance": 0.1,
+        "can_be_mirror_reflected": true,
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "enable_hp": false,
+        "expression_device_list": "table",
+        "extra_special_comp": 0,
+        "fix_destroy_time": -1,
+        "init_model_visible": true,
+        "model": 19000045,
+        "model_alpha": "0.8499999998603",
+        "ob_max_hp": 0,
+        "occlusion_type": 0,
+        "paint_area1": 16228769,
+        "paint_area2": 8837084,
+        "paint_area3": 9633731,
+        "paint_area4": 0,
+        "pattern_color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "physic_enable": false,
+        "receive_shadow": true,
+        "render_condition": 0,
+        "sel_skin": 0,
+        "special_comp": 0,
+        "spline_rope_concentricDistance": 0.0,
+        "spline_rope_layout": 2,
+        "spline_rope_vertices": "table",
+        "touch_enable": false,
+        "use_dynamic_model": true
+      }
+    },
+    "1450156080": {
+      "unit_id": 1450156080,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1465435450": {
+      "unit_id": 1465435450,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1470663561": {
+      "unit_id": 1470663561,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1491693774": {
+      "unit_id": 1491693774,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1505000620": {
+      "unit_id": 1505000620,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1526619187": {
+      "unit_id": 1526619187,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1548368039": {
+      "unit_id": 1548368039,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1549097709": {
+      "unit_id": 1549097709,
+      "prefab_id": 105700,
+      "name": "LLK_YAxis_middle_z_min",
+      "attrs": {
+        "BodyType": 0,
+        "Bounciness": 0.0,
+        "CollisionExtraForce": 0,
+        "ForcedType": false,
+        "FrictionCoefficient": 0.3,
+        "LocalCenterOfMass": [
+          0,
+          0,
+          0
+        ],
+        "Mass": 80.0,
+        "MassCenterType": 1,
+        "MassDensity": 1,
+        "MotorOpti": true,
+        "RollingResistance": 0.1,
+        "can_be_mirror_reflected": true,
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "enable_hp": false,
+        "expression_device_list": "table",
+        "extra_special_comp": 0,
+        "fix_destroy_time": -1,
+        "init_model_visible": true,
+        "model": 19000045,
+        "model_alpha": "0.8499999998603",
+        "ob_max_hp": 0,
+        "occlusion_type": 0,
+        "paint_area1": 16228769,
+        "paint_area2": 8837084,
+        "paint_area3": 9633731,
+        "paint_area4": 0,
+        "pattern_color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "physic_enable": false,
+        "receive_shadow": true,
+        "render_condition": 0,
+        "sel_skin": 0,
+        "special_comp": 0,
+        "spline_rope_concentricDistance": 0.0,
+        "spline_rope_layout": 2,
+        "spline_rope_vertices": "table",
+        "touch_enable": false,
+        "use_dynamic_model": true
+      }
+    },
+    "1555904951": {
+      "unit_id": 1555904951,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1558470313": {
+      "unit_id": 1558470313,
+      "prefab_id": 105700,
+      "name": "LLK_YAxis_middle_z_max",
+      "attrs": {
+        "BodyType": 0,
+        "Bounciness": 0.0,
+        "CollisionExtraForce": 0,
+        "ForcedType": false,
+        "FrictionCoefficient": 0.3,
+        "LocalCenterOfMass": [
+          0,
+          0,
+          0
+        ],
+        "Mass": 80.0,
+        "MassCenterType": 1,
+        "MassDensity": 1,
+        "MotorOpti": true,
+        "RollingResistance": 0.1,
+        "can_be_mirror_reflected": true,
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "enable_hp": false,
+        "expression_device_list": "table",
+        "extra_special_comp": 0,
+        "fix_destroy_time": -1,
+        "init_model_visible": true,
+        "model": 19000045,
+        "model_alpha": "0.8499999998603",
+        "ob_max_hp": 0,
+        "occlusion_type": 0,
+        "paint_area1": 16228769,
+        "paint_area2": 8837084,
+        "paint_area3": 9633731,
+        "paint_area4": 0,
+        "pattern_color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "physic_enable": false,
+        "receive_shadow": true,
+        "render_condition": 0,
+        "sel_skin": 0,
+        "special_comp": 0,
+        "spline_rope_concentricDistance": 0.0,
+        "spline_rope_layout": 2,
+        "spline_rope_vertices": "table",
+        "touch_enable": false,
+        "use_dynamic_model": true
+      }
+    },
+    "1567961424": {
+      "unit_id": 1567961424,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1581315092": {
+      "unit_id": 1581315092,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1586092004": {
+      "unit_id": 1586092004,
+      "prefab_id": 105700,
+      "name": "LLK_YAxis_middle_x_max",
+      "attrs": {
+        "BodyType": 0,
+        "Bounciness": 0.0,
+        "CollisionExtraForce": 0,
+        "ForcedType": false,
+        "FrictionCoefficient": 0.3,
+        "LocalCenterOfMass": [
+          0,
+          0,
+          0
+        ],
+        "Mass": 80.0,
+        "MassCenterType": 1,
+        "MassDensity": 1,
+        "MotorOpti": true,
+        "RollingResistance": 0.1,
+        "can_be_mirror_reflected": true,
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "enable_hp": false,
+        "expression_device_list": "table",
+        "extra_special_comp": 0,
+        "fix_destroy_time": -1,
+        "init_model_visible": true,
+        "model": 19000045,
+        "model_alpha": "0.8499999998603",
+        "ob_max_hp": 0,
+        "occlusion_type": 0,
+        "paint_area1": 16228769,
+        "paint_area2": 8837084,
+        "paint_area3": 9633731,
+        "paint_area4": 0,
+        "pattern_color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "physic_enable": false,
+        "receive_shadow": true,
+        "render_condition": 0,
+        "sel_skin": 0,
+        "special_comp": 0,
+        "spline_rope_concentricDistance": 0.0,
+        "spline_rope_layout": 2,
+        "spline_rope_vertices": "table",
+        "touch_enable": false,
+        "use_dynamic_model": true
+      }
+    },
+    "1587127163": {
+      "unit_id": 1587127163,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1609220428": {
+      "unit_id": 1609220428,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1616928822": {
+      "unit_id": 1616928822,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1626884833": {
+      "unit_id": 1626884833,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1646479093": {
+      "unit_id": 1646479093,
+      "prefab_id": 105700,
+      "name": "LLK_YAxis_bottom_x_min",
+      "attrs": {
+        "BodyType": 0,
+        "Bounciness": 0.0,
+        "CollisionExtraForce": 0,
+        "ForcedType": false,
+        "FrictionCoefficient": 0.3,
+        "LocalCenterOfMass": [
+          0,
+          0,
+          0
+        ],
+        "Mass": 80.0,
+        "MassCenterType": 1,
+        "MassDensity": 1,
+        "MotorOpti": true,
+        "RollingResistance": 0.1,
+        "can_be_mirror_reflected": true,
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "enable_hp": false,
+        "expression_device_list": "table",
+        "extra_special_comp": 0,
+        "fix_destroy_time": -1,
+        "init_model_visible": true,
+        "model": 19000045,
+        "model_alpha": "0.8499999998603",
+        "ob_max_hp": 0,
+        "occlusion_type": 0,
+        "paint_area1": 16228769,
+        "paint_area2": 8837084,
+        "paint_area3": 9633731,
+        "paint_area4": 0,
+        "pattern_color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "physic_enable": false,
+        "receive_shadow": true,
+        "render_condition": 0,
+        "sel_skin": 0,
+        "special_comp": 0,
+        "spline_rope_concentricDistance": 0.0,
+        "spline_rope_layout": 2,
+        "spline_rope_vertices": "table",
+        "touch_enable": false,
+        "use_dynamic_model": true
+      }
+    },
+    "1655602474": {
+      "unit_id": 1655602474,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1657449954": {
+      "unit_id": 1657449954,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1659908604": {
+      "unit_id": 1659908604,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1664312758": {
+      "unit_id": 1664312758,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1665273377": {
+      "unit_id": 1665273377,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1674491605": {
+      "unit_id": 1674491605,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1681499584": {
+      "unit_id": 1681499584,
+      "prefab_id": 1201010,
+      "name": "地砖0",
+      "attrs": {
+        "BodyType": 0,
+        "Bounciness": 0.0,
+        "CollisionExtraForce": 0,
+        "ForcedType": false,
+        "FrictionCoefficient": 0.3,
+        "LocalCenterOfMass": [
+          0,
+          0.5,
+          0
+        ],
+        "Mass": 10,
+        "MassDensity": 1.0,
+        "MotorOpti": true,
+        "RollingResistance": 0.1,
+        "can_be_mirror_reflected": true,
+        "close_accept_other_bake": false,
+        "close_bake_to_other": false,
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "drag_enable": false,
+        "emissive_intensity_1": 0.5,
+        "emissive_intensity_2": 0.0,
+        "enable_hp": false,
+        "expression_device_list": "table",
+        "extra_special_comp": 0,
+        "fix_destroy_time": -1,
+        "init_model_visible": true,
+        "lightmagic_ppm_scale": 0,
+        "material_metalness_1": 0.0,
+        "material_metalness_2": 0.0,
+        "material_roughness_1": 1.0,
+        "material_roughness_2": 1.0,
+        "model": 90004,
+        "model_alpha": 1.0,
+        "ob_max_hp": 0,
+        "occlusion_type": 1,
+        "paint_area1": 35071,
+        "paint_area2": 3795,
+        "paint_area3": 255,
+        "paint_area4": 16777215,
+        "pattern_alpha": 0.0,
+        "pattern_color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "physic_enable": true,
+        "receive_shadow": true,
+        "render_condition": 0,
+        "scale_type": "table",
+        "sel_skin": 140,
+        "special_comp": 0,
+        "touch_enable": false,
+        "touch_need_check": false,
+        "use_dynamic_model": false,
+        "use_static_shadow": false
+      }
+    },
+    "1682760674": {
+      "unit_id": 1682760674,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1698315884": {
+      "unit_id": 1698315884,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1701608838": {
+      "unit_id": 1701608838,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1726439884": {
+      "unit_id": 1726439884,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1743317506": {
+      "unit_id": 1743317506,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1749102576": {
+      "unit_id": 1749102576,
+      "prefab_id": 105700,
+      "name": "LLK_YAxis_top_x_max",
+      "attrs": {
+        "BodyType": 0,
+        "Bounciness": 0.0,
+        "CollisionExtraForce": 0,
+        "ForcedType": false,
+        "FrictionCoefficient": 0.3,
+        "LocalCenterOfMass": [
+          0,
+          0,
+          0
+        ],
+        "Mass": 80.0,
+        "MassCenterType": 1,
+        "MassDensity": 1,
+        "MotorOpti": true,
+        "RollingResistance": 0.1,
+        "can_be_mirror_reflected": true,
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "enable_hp": false,
+        "expression_device_list": "table",
+        "extra_special_comp": 0,
+        "fix_destroy_time": -1,
+        "init_model_visible": true,
+        "model": 19000045,
+        "model_alpha": "0.8499999998603",
+        "ob_max_hp": 0,
+        "occlusion_type": 0,
+        "paint_area1": 16228769,
+        "paint_area2": 8837084,
+        "paint_area3": 9633731,
+        "paint_area4": 0,
+        "pattern_color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "physic_enable": false,
+        "receive_shadow": true,
+        "render_condition": 0,
+        "sel_skin": 0,
+        "special_comp": 0,
+        "spline_rope_concentricDistance": 0.0,
+        "spline_rope_layout": 2,
+        "spline_rope_vertices": "table",
+        "touch_enable": false,
+        "use_dynamic_model": true
+      }
+    },
+    "1766897768": {
+      "unit_id": 1766897768,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1767419032": {
+      "unit_id": 1767419032,
+      "prefab_id": 105700,
+      "name": "LLK_YAxis_top_z_max",
+      "attrs": {
+        "BodyType": 0,
+        "Bounciness": 0.0,
+        "CollisionExtraForce": 0,
+        "ForcedType": false,
+        "FrictionCoefficient": 0.3,
+        "LocalCenterOfMass": [
+          0,
+          0,
+          0
+        ],
+        "Mass": 80.0,
+        "MassCenterType": 1,
+        "MassDensity": 1,
+        "MotorOpti": true,
+        "RollingResistance": 0.1,
+        "can_be_mirror_reflected": true,
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "enable_hp": false,
+        "expression_device_list": "table",
+        "extra_special_comp": 0,
+        "fix_destroy_time": -1,
+        "init_model_visible": true,
+        "model": 19000045,
+        "model_alpha": "0.8499999998603",
+        "ob_max_hp": 0,
+        "occlusion_type": 0,
+        "paint_area1": 16228769,
+        "paint_area2": 8837084,
+        "paint_area3": 9633731,
+        "paint_area4": 0,
+        "pattern_color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "physic_enable": false,
+        "receive_shadow": true,
+        "render_condition": 0,
+        "sel_skin": 0,
+        "special_comp": 0,
+        "spline_rope_concentricDistance": 0.0,
+        "spline_rope_layout": 2,
+        "spline_rope_vertices": "table",
+        "touch_enable": false,
+        "use_dynamic_model": true
+      }
+    },
+    "1768768983": {
+      "unit_id": 1768768983,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1776731522": {
+      "unit_id": 1776731522,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1787622883": {
+      "unit_id": 1787622883,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1788423753": {
+      "unit_id": 1788423753,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1805574540": {
+      "unit_id": 1805574540,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1841800625": {
+      "unit_id": 1841800625,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1843385088": {
+      "unit_id": 1843385088,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1849088970": {
+      "unit_id": 1849088970,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1857166230": {
+      "unit_id": 1857166230,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1871115026": {
+      "unit_id": 1871115026,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1893219095": {
+      "unit_id": 1893219095,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1931411198": {
+      "unit_id": 1931411198,
+      "prefab_id": 3201063,
+      "name": "相机路径0",
+      "attrs": {}
+    },
+    "1966886415": {
+      "unit_id": 1966886415,
+      "prefab_id": 105700,
+      "name": "LLK_YAxis_middle_x_min",
+      "attrs": {
+        "BodyType": 0,
+        "Bounciness": 0.0,
+        "CollisionExtraForce": 0,
+        "ForcedType": false,
+        "FrictionCoefficient": 0.3,
+        "LocalCenterOfMass": [
+          0,
+          0,
+          0
+        ],
+        "Mass": 80.0,
+        "MassCenterType": 1,
+        "MassDensity": 1,
+        "MotorOpti": true,
+        "RollingResistance": 0.1,
+        "can_be_mirror_reflected": true,
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "enable_hp": false,
+        "expression_device_list": "table",
+        "extra_special_comp": 0,
+        "fix_destroy_time": -1,
+        "init_model_visible": true,
+        "model": 19000045,
+        "model_alpha": "0.8499999998603",
+        "ob_max_hp": 0,
+        "occlusion_type": 0,
+        "paint_area1": 16228769,
+        "paint_area2": 8837084,
+        "paint_area3": 9633731,
+        "paint_area4": 0,
+        "pattern_color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "physic_enable": false,
+        "receive_shadow": true,
+        "render_condition": 0,
+        "sel_skin": 0,
+        "special_comp": 0,
+        "spline_rope_concentricDistance": 0.0,
+        "spline_rope_layout": 2,
+        "spline_rope_vertices": "table",
+        "touch_enable": false,
+        "use_dynamic_model": true
+      }
+    },
+    "1969596646": {
+      "unit_id": 1969596646,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1970628930": {
+      "unit_id": 1970628930,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1978008993": {
+      "unit_id": 1978008993,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "1991563928": {
+      "unit_id": 1991563928,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "2005137678": {
+      "unit_id": 2005137678,
+      "prefab_id": 105700,
+      "name": "LLK_YAxis_bottom_z_max",
+      "attrs": {
+        "BodyType": 0,
+        "Bounciness": 0.0,
+        "CollisionExtraForce": 0,
+        "ForcedType": false,
+        "FrictionCoefficient": 0.3,
+        "LocalCenterOfMass": [
+          0,
+          0,
+          0
+        ],
+        "Mass": 80.0,
+        "MassCenterType": 1,
+        "MassDensity": 1,
+        "MotorOpti": true,
+        "RollingResistance": 0.1,
+        "can_be_mirror_reflected": true,
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "enable_hp": false,
+        "expression_device_list": "table",
+        "extra_special_comp": 0,
+        "fix_destroy_time": -1,
+        "init_model_visible": true,
+        "model": 19000045,
+        "model_alpha": "0.8499999998603",
+        "ob_max_hp": 0,
+        "occlusion_type": 0,
+        "paint_area1": 16228769,
+        "paint_area2": 8837084,
+        "paint_area3": 9633731,
+        "paint_area4": 0,
+        "pattern_color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "physic_enable": false,
+        "receive_shadow": true,
+        "render_condition": 0,
+        "sel_skin": 0,
+        "special_comp": 0,
+        "spline_rope_concentricDistance": 0.0,
+        "spline_rope_layout": 2,
+        "spline_rope_vertices": "table",
+        "touch_enable": false,
+        "use_dynamic_model": true
+      }
+    },
+    "2016866571": {
+      "unit_id": 2016866571,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "2075737132": {
+      "unit_id": 2075737132,
+      "prefab_id": 105700,
+      "name": "LLK_YAxis_top_x_min",
+      "attrs": {
+        "BodyType": 0,
+        "Bounciness": 0.0,
+        "CollisionExtraForce": 0,
+        "ForcedType": false,
+        "FrictionCoefficient": 0.3,
+        "LocalCenterOfMass": [
+          0,
+          0,
+          0
+        ],
+        "Mass": 80.0,
+        "MassCenterType": 1,
+        "MassDensity": 1,
+        "MotorOpti": true,
+        "RollingResistance": 0.1,
+        "can_be_mirror_reflected": true,
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "enable_hp": false,
+        "expression_device_list": "table",
+        "extra_special_comp": 0,
+        "fix_destroy_time": -1,
+        "init_model_visible": true,
+        "model": 19000045,
+        "model_alpha": "0.8499999998603",
+        "ob_max_hp": 0,
+        "occlusion_type": 0,
+        "paint_area1": 16228769,
+        "paint_area2": 8837084,
+        "paint_area3": 9633731,
+        "paint_area4": 0,
+        "pattern_color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "physic_enable": false,
+        "receive_shadow": true,
+        "render_condition": 0,
+        "sel_skin": 0,
+        "special_comp": 0,
+        "spline_rope_concentricDistance": 0.0,
+        "spline_rope_layout": 2,
+        "spline_rope_vertices": "table",
+        "touch_enable": false,
+        "use_dynamic_model": true
+      }
+    },
+    "2101523385": {
+      "unit_id": 2101523385,
+      "prefab_id": 105700,
+      "name": "LLK_YAxis_top_z_min",
+      "attrs": {
+        "BodyType": 0,
+        "Bounciness": 0.0,
+        "CollisionExtraForce": 0,
+        "ForcedType": false,
+        "FrictionCoefficient": 0.3,
+        "LocalCenterOfMass": [
+          0,
+          0,
+          0
+        ],
+        "Mass": 80.0,
+        "MassCenterType": 1,
+        "MassDensity": 1,
+        "MotorOpti": true,
+        "RollingResistance": 0.1,
+        "can_be_mirror_reflected": true,
+        "close_cast_shadow": false,
+        "create_probability": 1.0,
+        "enable_hp": false,
+        "expression_device_list": "table",
+        "extra_special_comp": 0,
+        "fix_destroy_time": -1,
+        "init_model_visible": true,
+        "model": 19000045,
+        "model_alpha": "0.8499999998603",
+        "ob_max_hp": 0,
+        "occlusion_type": 0,
+        "paint_area1": 16228769,
+        "paint_area2": 8837084,
+        "paint_area3": 9633731,
+        "paint_area4": 0,
+        "pattern_color": [
+          0,
+          0,
+          0,
+          255
+        ],
+        "physic_enable": false,
+        "receive_shadow": true,
+        "render_condition": 0,
+        "sel_skin": 0,
+        "special_comp": 0,
+        "spline_rope_concentricDistance": 0.0,
+        "spline_rope_layout": 2,
+        "spline_rope_vertices": "table",
+        "touch_enable": false,
+        "use_dynamic_model": true
+      }
+    },
+    "2116424657": {
+      "unit_id": 2116424657,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "2125934027": {
+      "unit_id": 2125934027,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    },
+    "2140109088": {
+      "unit_id": 2140109088,
+      "prefab_id": 0,
+      "name": null,
+      "attrs": {}
+    }
+  },
+  "prefabs_by_id": {
+    "105700": {
+      "prefabId": 105700,
+      "id": 105700,
+      "name": "自定义线条",
+      "type": "editor_unit",
+      "path": [
+        "组件",
+        "结构",
+        "基础形状"
+      ],
+      "path_text": "组件 / 结构 / 基础形状",
+      "source": "egg_prefab_tree",
+      "tree_file": "/home/zhangyuwen/eggy_space/platform/蛋仔预制体/组件/tree_model.json",
+      "table_attrs": {
+        "BodyType": "0",
+        "Bounciness": "0.0",
+        "ForcedType": "False",
+        "FrictionCoefficient": "0.3",
+        "LocalCenterOfMass": "(0.0, 0.0, 0.0)",
+        "Mass": "80.0",
+        "MassCenterType": "1",
+        "RollingResistance": "0.1",
+        "_official_": "True",
+        "components": "{\"kv\": {\"__tuple__\": true, \"items\": [{\"__tuple__\": true, \"items\": []}, {}]}}",
+        "edit_attr_list": "('paint_area1', 'paint_area2', 'paint_area3', 'paint_area4', 'model_alpha', 'CollisionExtraForce', 'Bounciness', 'physic_enable', 'occlusion_type', 'sel_skin', 'ForcedType', 'extra_special_comp', 'FrictionCoefficient', 'RollingResistance', 'close_cast_shadow', 'fix_destroy_time', 'LocalCenterOfMass', 'use_dynamic_model', 'touch_enable', 'receive_shadow', 'can_be_mirror_reflected')",
+        "key": "105700",
+        "model": "19000045",
+        "name": "2422359553",
+        "occlusion_type": "0",
+        "paint_area1": "(247, 161, 161)",
+        "paint_area2": "(134, 215, 220)",
+        "paint_area3": "(146, 255, 195)",
+        "paint_area4": "(0, 0, 0, 255)",
+        "pattern_color": "(0, 0, 0, 255.0)",
+        "sel_skin": "0",
+        "spline_rope_concentricDistance": "0.0",
+        "spline_rope_layout": "2",
+        "spline_rope_vertices": "({'vertice_merge_state': 0, 'vertice_pos': (0.0, 0.0, 0.0), 'vertice_id': 0, 'vertice_name': '\\xe6\\xa0\\xb7\\xe6\\x9d\\xa1\\xe7\\xbb\\xb3\\xe9\\xa1\\xb6\\xe7\\x82\\xb90', 'vertice_normal': (0.0, 1.0, 0.0)}, {'vertice_merge_state': 0, 'vertice_pos': (0.0, 0.0, 3.0), 'vertice_id': 1, 'vertice_name': '\\xe6\\xa0\\xb7\\xe6\\x9d\\xa1\\xe7\\xbb\\xb3\\xe9\\xa1\\xb6\\xe7\\x82\\xb91', 'vertice_normal': (0.0, 1.0, 0.0)}, {'vertice_merge_state': 0, 'vertice_pos': (0.0, 0.0, 6.0), 'vertice_id': 2, 'vertice_name': '\\xe6\\xa0\\xb7\\xe6\\x9d\\xa1\\xe7\\xbb\\xb3\\xe9\\xa1\\xb6\\xe7\\x82\\xb92', 'vertice_normal': (0.0, 1.0, 0.0)})",
+        "theme": "1",
+        "touch_enable": "False",
+        "type": "256",
+        "uid": "105700_uid",
+        "use_dynamic_model": "True"
+      },
+      "table_labels": {
+        "Bounciness": "反弹系数",
+        "CollisionExtraForce": "冲击速度",
+        "ForcedType": "受外力作用",
+        "FrictionCoefficient": "滑动摩擦系数",
+        "LocalCenterOfMass": "重心",
+        "Mass": "质量",
+        "MassCenterType": "质量类型",
+        "RollingResistance": "滚动摩擦系数",
+        "close_cast_shadow": "关闭投射阴影",
+        "extra_special_comp": "可附加特殊组件",
+        "model": "模型",
+        "model_alpha": "模型透明度",
+        "name": "名称",
+        "occlusion_type": "遮挡规则",
+        "paint_area1": "染色区域1",
+        "paint_area2": "染色区域2",
+        "paint_area3": "染色区域3",
+        "paint_area4": "染色区域4",
+        "pattern_color": "花纹颜色",
+        "physic_enable": "开启物理碰撞",
+        "sel_skin": "选择皮肤",
+        "spline_rope_concentricDistance": "RUNTIME_SPLINE_ROPE_RINGDISTANCE",
+        "spline_rope_layout": "lack_description",
+        "spline_rope_vertices": "RUNTIME_SPLINE_ROPE_VERTICES",
+        "touch_enable": "可点击",
+        "uid": "ID",
+        "use_dynamic_model": "启用动态模型"
+      },
+      "table_files": [
+        "/home/zhangyuwen/eggy_space/platform/蛋仔预制体/组件/表格.xls"
+      ],
+      "edit_attr_keys": [
+        "paint_area1",
+        "paint_area2",
+        "paint_area3",
+        "paint_area4",
+        "model_alpha",
+        "CollisionExtraForce",
+        "Bounciness",
+        "physic_enable",
+        "occlusion_type",
+        "sel_skin",
+        "ForcedType",
+        "extra_special_comp",
+        "FrictionCoefficient",
+        "RollingResistance",
+        "close_cast_shadow",
+        "fix_destroy_time",
+        "LocalCenterOfMass",
+        "use_dynamic_model",
+        "touch_enable",
+        "receive_shadow",
+        "can_be_mirror_reflected"
+      ]
+    },
+    "600005": {
+      "prefabId": 600005,
+      "id": 600005,
+      "name": "分阵营出生点",
+      "type": "editor_virtual_point",
+      "path": [
+        "路点",
+        "机关",
+        "逻辑"
+      ],
+      "path_text": "路点 / 机关 / 逻辑",
+      "source": "egg_prefab_tree",
+      "tree_file": "/home/zhangyuwen/eggy_space/platform/蛋仔预制体/路点/tree_model.json",
+      "table_attrs": {
+        "collision_mask": "4",
+        "default_model_angle": "(0.0, -90.0, 0.0)",
+        "edit_attr_list": "('sel_skin', 'virtual_point_type', 'paint_area1')",
+        "is_born_point": "True",
+        "key": "600005",
+        "model": "90007",
+        "name": "分阵营出生点",
+        "paint_area1": "(83, 192, 255, 255)",
+        "property_group_1": "{\"expression_can_ctrls\": 15, \"scale\": {\"__tuple__\": true, \"items\": [1.0, 1.0, 1.0]}, \"destroy_with_parent\": false, \"model_alpha\": 1.0, \"sel_skin\": 0, \"default_model_angle\": {\"__tuple__\": true, \"items\": [0.0, -90.0, 0.0]}, \"paint_area1\": {\"__tuple__\": true, \"items\": [83, 192, 255, 255]}}",
+        "type": "16384",
+        "uid": "600005_uid",
+        "use_camp_color": "True",
+        "virtual_point_type": "4"
+      },
+      "table_labels": {
+        "default_model_angle": "默认旋转",
+        "model": "模型",
+        "name": "名称",
+        "paint_area1": "染色区域1",
+        "sel_skin": "选择皮肤",
+        "uid": "ID",
+        "use_camp_color": "是否启用阵营颜色",
+        "virtual_point_type": "路径点类型"
+      },
+      "table_files": [
+        "/home/zhangyuwen/eggy_space/platform/蛋仔预制体/路点/表格.xls"
+      ],
+      "edit_attr_keys": [
+        "sel_skin",
+        "virtual_point_type",
+        "paint_area1"
+      ]
+    },
+    "1201010": {
+      "prefabId": 1201010,
+      "id": 1201010,
+      "name": "大地板",
+      "type": "editor_unit",
+      "path": [
+        "组件",
+        "结构",
+        "风格形状"
+      ],
+      "path_text": "组件 / 结构 / 风格形状",
+      "source": "egg_prefab_tree",
+      "tree_file": "/home/zhangyuwen/eggy_space/platform/蛋仔预制体/组件/tree_model.json",
+      "table_attrs": {
+        "BodyType": "1",
+        "Bounciness": "0.0",
+        "ForcedType": "False",
+        "FrictionCoefficient": "0.3",
+        "LocalCenterOfMass": "(0, 0.5, 0)",
+        "MassDensity": "1.0",
+        "MotorOpti": "True",
+        "RollingResistance": "0.1",
+        "edit_attr_list": "('ForcedType', 'FrictionCoefficient', 'LocalCenterOfMass', 'RollingResistance', 'close_accept_other_bake', 'close_bake_to_other', 'close_cast_shadow', 'drag_enable', 'extra_special_comp', 'fix_destroy_time', 'lightmagic_ppm_scale', 'occlusion_type', 'paint_area1', 'paint_area2', 'paint_area3', 'paint_area4', 'pattern_alpha', 'pattern_color', 'physic_enable', 'sel_skin', 'touch_enable', 'touch_need_check', 'use_static_shadow', 'receive_shadow', 'can_be_mirror_reflected')",
+        "key": "1201010",
+        "model": "90004",
+        "name": "3525515208",
+        "occlusion_type": "1",
+        "paint_area1": "(251, 163, 154)",
+        "paint_area2": "(253, 116, 124)",
+        "paint_area3": "(0, 0, 255)",
+        "paint_area4": "(255, 255, 255)",
+        "pattern_alpha": "0.0",
+        "pattern_color": "(0, 0, 0, 255.0)",
+        "render_condition": "0",
+        "scale_type": "(x),(y),(z)",
+        "sel_skin": "0",
+        "special_comp": "0",
+        "theme": "1",
+        "touch_enable": "False",
+        "type": "256",
+        "uid": "floor_3",
+        "use_static_shadow": "False"
+      },
+      "table_labels": {
+        "Bounciness": "反弹系数",
+        "ForcedType": "受外力作用",
+        "FrictionCoefficient": "滑动摩擦系数",
+        "LocalCenterOfMass": "重心",
+        "MassDensity": "密度",
+        "MotorOpti": "运动性能优化",
+        "RollingResistance": "滚动摩擦系数",
+        "close_accept_other_bake": "不接受其他组件的烘焙",
+        "close_bake_to_other": "不烘焙到其他组件上",
+        "close_cast_shadow": "关闭投射阴影",
+        "extra_special_comp": "可附加特殊组件",
+        "lightmagic_ppm_scale": "lightmagic烘焙精度",
+        "model": "模型",
+        "name": "名称",
+        "occlusion_type": "遮挡规则",
+        "paint_area1": "染色区域1",
+        "paint_area2": "染色区域2",
+        "paint_area3": "染色区域3",
+        "paint_area4": "染色区域4",
+        "pattern_alpha": "花纹透明度",
+        "pattern_color": "花纹颜色",
+        "physic_enable": "开启物理碰撞",
+        "render_condition": "显示条件",
+        "scale_type": "缩放类型",
+        "sel_skin": "选择皮肤",
+        "special_comp": "特殊组件",
+        "touch_enable": "可点击",
+        "uid": "ID",
+        "use_static_shadow": "使用静态阴影"
+      },
+      "table_files": [
+        "/home/zhangyuwen/eggy_space/platform/蛋仔预制体/组件/表格.xls"
+      ],
+      "edit_attr_keys": [
+        "ForcedType",
+        "FrictionCoefficient",
+        "LocalCenterOfMass",
+        "RollingResistance",
+        "close_accept_other_bake",
+        "close_bake_to_other",
+        "close_cast_shadow",
+        "drag_enable",
+        "extra_special_comp",
+        "fix_destroy_time",
+        "lightmagic_ppm_scale",
+        "occlusion_type",
+        "paint_area1",
+        "paint_area2",
+        "paint_area3",
+        "paint_area4",
+        "pattern_alpha",
+        "pattern_color",
+        "physic_enable",
+        "sel_skin",
+        "touch_enable",
+        "touch_need_check",
+        "use_static_shadow",
+        "receive_shadow",
+        "can_be_mirror_reflected"
+      ]
+    }
+  },
+  "errors": []
+}

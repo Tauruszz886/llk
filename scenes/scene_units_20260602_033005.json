@@ -1,0 +1,3462 @@
+{
+  "errors": [],
+  "exported_at_unix": 1780370995,
+  "ids": [
+    1,
+    1681499584,
+    1401993508,
+    1931411198,
+    1001,
+    1003,
+    1002,
+    1254695097,
+    1279045625,
+    1399824806,
+    1659908604,
+    1191046992,
+    1701608838,
+    1193608358,
+    1969596646,
+    1418247933,
+    2005137678,
+    1768768983,
+    1470663561,
+    1991563928,
+    1893219095,
+    1646479093,
+    1849088970,
+    1164709328,
+    2116424657,
+    1805574540,
+    1302698444,
+    1204277840,
+    1423197915,
+    1665273377,
+    1071686662,
+    1077989550,
+    1242154569,
+    1046549468,
+    1587127163,
+    1549097709,
+    1626884833,
+    1357102836,
+    1450156080,
+    1776731522,
+    1698315884,
+    1413842355,
+    1558470313,
+    1674491605,
+    1616928822,
+    1657449954,
+    1073545956,
+    1335787914,
+    1787622883,
+    1966886415,
+    1548368039,
+    1978008993,
+    1726439884,
+    1788423753,
+    1766897768,
+    2125934027,
+    1586092004,
+    1655602474,
+    1743317506,
+    1664312758,
+    1133872834,
+    1111935546,
+    1609220428,
+    2101523385,
+    1555904951,
+    2140109088,
+    1581315092,
+    1178734738,
+    2016866571,
+    1843385088,
+    1767419032,
+    1413632294,
+    1395899394,
+    1404468527,
+    1491693774,
+    1465435450,
+    1293982738,
+    2075737132,
+    1841800625,
+    1857166230,
+    1567961424,
+    1406126625,
+    1129524711,
+    1970628930,
+    1749102576,
+    1049337671,
+    1505000620,
+    1682760674,
+    1526619187,
+    1113527349,
+    1871115026
+  ],
+  "schema": "egg_editor_scene_units.v2",
+  "selected_unit_ids": [
+    1749102576
+  ],
+  "source": {
+    "data_api": "EditorAPI.get_scene_unit_data",
+    "ids_api": "EditorAPI.get_all_unit_ids"
+  },
+  "unit_count": 91,
+  "unit_tree": [
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 0,
+        "unit_id": 1,
+        "unit_type": 128
+      },
+      "id": 1
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "emissive_intensity_1": 0.5,
+        "enable_hp": false,
+        "fix_destroy_time": -1,
+        "material_metalness_1": 0.0,
+        "material_roughness_1": 1.0,
+        "model_angle": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "model_id": 90004,
+        "name": "地砖0",
+        "ob_max_hp": 0,
+        "parent_unit_id": 0,
+        "physic_enable": true,
+        "position": [
+          -23.252,
+          0.0,
+          0.25
+        ],
+        "prefab_id": 1201010,
+        "scale": [
+          3.166631328418,
+          1.0,
+          2.3500001430511
+        ],
+        "unit_eid": 1201010,
+        "unit_id": 1681499584,
+        "unit_type": 256,
+        "unit_uid": "floor_3",
+        "world_position": [
+          -23.252,
+          0.0,
+          0.25
+        ]
+      },
+      "id": 1681499584
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          -0.0,
+          -90.0,
+          0.0
+        ],
+        "model_id": 90007,
+        "name": "分阵营出生点1",
+        "parent_unit_id": 0,
+        "position": [
+          -5.0,
+          2.0,
+          0.0
+        ],
+        "prefab_id": 600005,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 600005,
+        "unit_id": 1401993508,
+        "unit_type": 16384,
+        "unit_uid": "600005_uid",
+        "world_position": [
+          -5.0,
+          2.0,
+          0.0
+        ]
+      },
+      "id": 1401993508
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "model_id": 90002,
+        "name": "相机路径0",
+        "parent_unit_id": 0,
+        "position": [
+          99999.0,
+          99999.0,
+          99999.0
+        ],
+        "prefab_id": 3201063,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 3201063,
+        "unit_id": 1931411198,
+        "unit_type": 2048,
+        "unit_uid": "3201063_uid",
+        "world_position": [
+          99999.0,
+          99999.0,
+          99999.0
+        ]
+      },
+      "id": 1931411198
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 0,
+        "unit_id": 1001,
+        "unit_type": 0
+      },
+      "id": 1001
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 0,
+        "unit_id": 1003,
+        "unit_type": 0
+      },
+      "id": 1003
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 0,
+        "unit_id": 1002,
+        "unit_type": 0
+      },
+      "id": 1002
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1254695097,
+        "unit_type": 0
+      },
+      "id": 1254695097
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1279045625,
+        "unit_type": 0
+      },
+      "id": 1279045625
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1399824806,
+        "unit_type": 0
+      },
+      "id": 1399824806
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1659908604,
+        "unit_type": 0
+      },
+      "id": 1659908604
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "fix_destroy_time": -1,
+        "model_alpha": "0.8499999998603",
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 19000045,
+        "name": "LLK_YAxis_bottom_z_min",
+        "parent_unit_id": 0,
+        "physic_enable": false,
+        "position": [
+          -23.252,
+          -1.0,
+          -11.5
+        ],
+        "prefab_id": 105700,
+        "scale": [
+          23.749734963523,
+          0.059999999823049,
+          0.059999999823049
+        ],
+        "unit_eid": 105700,
+        "unit_id": 1191046992,
+        "unit_type": 256,
+        "unit_uid": "105700_uid",
+        "world_position": [
+          -23.252,
+          -1.0,
+          -11.5
+        ]
+      },
+      "id": 1191046992
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1701608838,
+        "unit_type": 0
+      },
+      "id": 1701608838
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1193608358,
+        "unit_type": 0
+      },
+      "id": 1193608358
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1969596646,
+        "unit_type": 0
+      },
+      "id": 1969596646
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1418247933,
+        "unit_type": 0
+      },
+      "id": 1418247933
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "fix_destroy_time": -1,
+        "model_alpha": "0.8499999998603",
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 19000045,
+        "name": "LLK_YAxis_bottom_z_max",
+        "parent_unit_id": 0,
+        "physic_enable": false,
+        "position": [
+          -23.252,
+          -1.0,
+          12.0
+        ],
+        "prefab_id": 105700,
+        "scale": [
+          23.749734963523,
+          0.059999999823049,
+          0.059999999823049
+        ],
+        "unit_eid": 105700,
+        "unit_id": 2005137678,
+        "unit_type": 256,
+        "unit_uid": "105700_uid",
+        "world_position": [
+          -23.252,
+          -1.0,
+          12.0
+        ]
+      },
+      "id": 2005137678
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1768768983,
+        "unit_type": 0
+      },
+      "id": 1768768983
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1470663561,
+        "unit_type": 0
+      },
+      "id": 1470663561
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1991563928,
+        "unit_type": 0
+      },
+      "id": 1991563928
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1893219095,
+        "unit_type": 0
+      },
+      "id": 1893219095
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "fix_destroy_time": -1,
+        "model_alpha": "0.8499999998603",
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 19000045,
+        "name": "LLK_YAxis_bottom_x_min",
+        "parent_unit_id": 0,
+        "physic_enable": false,
+        "position": [
+          -47.002,
+          -1.0,
+          0.25
+        ],
+        "prefab_id": 105700,
+        "scale": [
+          0.059999999823049,
+          0.059999999823049,
+          11.75000071479
+        ],
+        "unit_eid": 105700,
+        "unit_id": 1646479093,
+        "unit_type": 256,
+        "unit_uid": "105700_uid",
+        "world_position": [
+          -47.002,
+          -1.0,
+          0.25
+        ]
+      },
+      "id": 1646479093
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1849088970,
+        "unit_type": 0
+      },
+      "id": 1849088970
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1164709328,
+        "unit_type": 0
+      },
+      "id": 1164709328
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 2116424657,
+        "unit_type": 0
+      },
+      "id": 2116424657
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1805574540,
+        "unit_type": 0
+      },
+      "id": 1805574540
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1302698444,
+        "unit_type": 0
+      },
+      "id": 1302698444
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1204277840,
+        "unit_type": 0
+      },
+      "id": 1204277840
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "fix_destroy_time": -1,
+        "model_alpha": "0.8499999998603",
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 19000045,
+        "name": "LLK_YAxis_bottom_x_max",
+        "parent_unit_id": 0,
+        "physic_enable": false,
+        "position": [
+          0.498,
+          -1.0,
+          0.25
+        ],
+        "prefab_id": 105700,
+        "scale": [
+          0.059999999823049,
+          0.059999999823049,
+          11.75000071479
+        ],
+        "unit_eid": 105700,
+        "unit_id": 1423197915,
+        "unit_type": 256,
+        "unit_uid": "105700_uid",
+        "world_position": [
+          0.498,
+          -1.0,
+          0.25
+        ]
+      },
+      "id": 1423197915
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1665273377,
+        "unit_type": 0
+      },
+      "id": 1665273377
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1071686662,
+        "unit_type": 0
+      },
+      "id": 1071686662
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1077989550,
+        "unit_type": 0
+      },
+      "id": 1077989550
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1242154569,
+        "unit_type": 0
+      },
+      "id": 1242154569
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1046549468,
+        "unit_type": 0
+      },
+      "id": 1046549468
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1587127163,
+        "unit_type": 0
+      },
+      "id": 1587127163
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "fix_destroy_time": -1,
+        "model_alpha": "0.8499999998603",
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 19000045,
+        "name": "LLK_YAxis_middle_z_min",
+        "parent_unit_id": 0,
+        "physic_enable": false,
+        "position": [
+          -23.252,
+          0.0,
+          -11.5
+        ],
+        "prefab_id": 105700,
+        "scale": [
+          23.749734963523,
+          0.059999999823049,
+          0.059999999823049
+        ],
+        "unit_eid": 105700,
+        "unit_id": 1549097709,
+        "unit_type": 256,
+        "unit_uid": "105700_uid",
+        "world_position": [
+          -23.252,
+          0.0,
+          -11.5
+        ]
+      },
+      "id": 1549097709
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1626884833,
+        "unit_type": 0
+      },
+      "id": 1626884833
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1357102836,
+        "unit_type": 0
+      },
+      "id": 1357102836
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1450156080,
+        "unit_type": 0
+      },
+      "id": 1450156080
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1776731522,
+        "unit_type": 0
+      },
+      "id": 1776731522
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1698315884,
+        "unit_type": 0
+      },
+      "id": 1698315884
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1413842355,
+        "unit_type": 0
+      },
+      "id": 1413842355
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "fix_destroy_time": -1,
+        "model_alpha": "0.8499999998603",
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 19000045,
+        "name": "LLK_YAxis_middle_z_max",
+        "parent_unit_id": 0,
+        "physic_enable": false,
+        "position": [
+          -23.252,
+          0.0,
+          12.0
+        ],
+        "prefab_id": 105700,
+        "scale": [
+          23.749734963523,
+          0.059999999823049,
+          0.059999999823049
+        ],
+        "unit_eid": 105700,
+        "unit_id": 1558470313,
+        "unit_type": 256,
+        "unit_uid": "105700_uid",
+        "world_position": [
+          -23.252,
+          0.0,
+          12.0
+        ]
+      },
+      "id": 1558470313
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1674491605,
+        "unit_type": 0
+      },
+      "id": 1674491605
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1616928822,
+        "unit_type": 0
+      },
+      "id": 1616928822
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1657449954,
+        "unit_type": 0
+      },
+      "id": 1657449954
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1073545956,
+        "unit_type": 0
+      },
+      "id": 1073545956
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1335787914,
+        "unit_type": 0
+      },
+      "id": 1335787914
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1787622883,
+        "unit_type": 0
+      },
+      "id": 1787622883
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "fix_destroy_time": -1,
+        "model_alpha": "0.8499999998603",
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 19000045,
+        "name": "LLK_YAxis_middle_x_min",
+        "parent_unit_id": 0,
+        "physic_enable": false,
+        "position": [
+          -47.002,
+          0.0,
+          0.25
+        ],
+        "prefab_id": 105700,
+        "scale": [
+          0.059999999823049,
+          0.059999999823049,
+          11.75000071479
+        ],
+        "unit_eid": 105700,
+        "unit_id": 1966886415,
+        "unit_type": 256,
+        "unit_uid": "105700_uid",
+        "world_position": [
+          -47.002,
+          0.0,
+          0.25
+        ]
+      },
+      "id": 1966886415
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1548368039,
+        "unit_type": 0
+      },
+      "id": 1548368039
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1978008993,
+        "unit_type": 0
+      },
+      "id": 1978008993
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1726439884,
+        "unit_type": 0
+      },
+      "id": 1726439884
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1788423753,
+        "unit_type": 0
+      },
+      "id": 1788423753
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1766897768,
+        "unit_type": 0
+      },
+      "id": 1766897768
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 2125934027,
+        "unit_type": 0
+      },
+      "id": 2125934027
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "fix_destroy_time": -1,
+        "model_alpha": "0.8499999998603",
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 19000045,
+        "name": "LLK_YAxis_middle_x_max",
+        "parent_unit_id": 0,
+        "physic_enable": false,
+        "position": [
+          0.498,
+          0.0,
+          0.25
+        ],
+        "prefab_id": 105700,
+        "scale": [
+          0.059999999823049,
+          0.059999999823049,
+          11.75000071479
+        ],
+        "unit_eid": 105700,
+        "unit_id": 1586092004,
+        "unit_type": 256,
+        "unit_uid": "105700_uid",
+        "world_position": [
+          0.498,
+          0.0,
+          0.25
+        ]
+      },
+      "id": 1586092004
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1655602474,
+        "unit_type": 0
+      },
+      "id": 1655602474
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1743317506,
+        "unit_type": 0
+      },
+      "id": 1743317506
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1664312758,
+        "unit_type": 0
+      },
+      "id": 1664312758
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1133872834,
+        "unit_type": 0
+      },
+      "id": 1133872834
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1111935546,
+        "unit_type": 0
+      },
+      "id": 1111935546
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1609220428,
+        "unit_type": 0
+      },
+      "id": 1609220428
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "fix_destroy_time": -1,
+        "model_alpha": "0.8499999998603",
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 19000045,
+        "name": "LLK_YAxis_top_z_min",
+        "parent_unit_id": 0,
+        "physic_enable": false,
+        "position": [
+          -23.252,
+          1.0,
+          -11.5
+        ],
+        "prefab_id": 105700,
+        "scale": [
+          23.749734963523,
+          0.059999999823049,
+          0.059999999823049
+        ],
+        "unit_eid": 105700,
+        "unit_id": 2101523385,
+        "unit_type": 256,
+        "unit_uid": "105700_uid",
+        "world_position": [
+          -23.252,
+          1.0,
+          -11.5
+        ]
+      },
+      "id": 2101523385
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1555904951,
+        "unit_type": 0
+      },
+      "id": 1555904951
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 2140109088,
+        "unit_type": 0
+      },
+      "id": 2140109088
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1581315092,
+        "unit_type": 0
+      },
+      "id": 1581315092
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1178734738,
+        "unit_type": 0
+      },
+      "id": 1178734738
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 2016866571,
+        "unit_type": 0
+      },
+      "id": 2016866571
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1843385088,
+        "unit_type": 0
+      },
+      "id": 1843385088
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "fix_destroy_time": -1,
+        "model_alpha": "0.8499999998603",
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 19000045,
+        "name": "LLK_YAxis_top_z_max",
+        "parent_unit_id": 0,
+        "physic_enable": false,
+        "position": [
+          -23.252,
+          1.0,
+          12.0
+        ],
+        "prefab_id": 105700,
+        "scale": [
+          23.749734963523,
+          0.059999999823049,
+          0.059999999823049
+        ],
+        "unit_eid": 105700,
+        "unit_id": 1767419032,
+        "unit_type": 256,
+        "unit_uid": "105700_uid",
+        "world_position": [
+          -23.252,
+          1.0,
+          12.0
+        ]
+      },
+      "id": 1767419032
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1413632294,
+        "unit_type": 0
+      },
+      "id": 1413632294
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1395899394,
+        "unit_type": 0
+      },
+      "id": 1395899394
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1404468527,
+        "unit_type": 0
+      },
+      "id": 1404468527
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1491693774,
+        "unit_type": 0
+      },
+      "id": 1491693774
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1465435450,
+        "unit_type": 0
+      },
+      "id": 1465435450
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "-1.3152441456914",
+          "-1.3152441456914",
+          "-1.3152441456914"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1293982738,
+        "unit_type": 0
+      },
+      "id": 1293982738
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "fix_destroy_time": -1,
+        "model_alpha": "0.8499999998603",
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 19000045,
+        "name": "LLK_YAxis_top_x_min",
+        "parent_unit_id": 0,
+        "physic_enable": false,
+        "position": [
+          -47.002,
+          1.0,
+          0.25
+        ],
+        "prefab_id": 105700,
+        "scale": [
+          0.059999999823049,
+          0.059999999823049,
+          11.75000071479
+        ],
+        "unit_eid": 105700,
+        "unit_id": 2075737132,
+        "unit_type": 256,
+        "unit_uid": "105700_uid",
+        "world_position": [
+          -47.002,
+          1.0,
+          0.25
+        ]
+      },
+      "id": 2075737132
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1841800625,
+        "unit_type": 0
+      },
+      "id": 1841800625
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1857166230,
+        "unit_type": 0
+      },
+      "id": 1857166230
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1567961424,
+        "unit_type": 0
+      },
+      "id": 1567961424
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1406126625,
+        "unit_type": 0
+      },
+      "id": 1406126625
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1129524711,
+        "unit_type": 0
+      },
+      "id": 1129524711
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1970628930,
+        "unit_type": 0
+      },
+      "id": 1970628930
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "fix_destroy_time": -1,
+        "model_alpha": "0.8499999998603",
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 19000045,
+        "name": "LLK_YAxis_top_x_max",
+        "parent_unit_id": 0,
+        "physic_enable": false,
+        "position": [
+          0.498,
+          1.0,
+          0.25
+        ],
+        "prefab_id": 105700,
+        "scale": [
+          0.059999999823049,
+          0.059999999823049,
+          11.75000071479
+        ],
+        "unit_eid": 105700,
+        "unit_id": 1749102576,
+        "unit_type": 256,
+        "unit_uid": "105700_uid",
+        "world_position": [
+          0.498,
+          1.0,
+          0.25
+        ]
+      },
+      "id": 1749102576
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1049337671,
+        "unit_type": 0
+      },
+      "id": 1049337671
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1505000620,
+        "unit_type": 0
+      },
+      "id": 1505000620
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1682760674,
+        "unit_type": 0
+      },
+      "id": 1682760674
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1526619187,
+        "unit_type": 0
+      },
+      "id": 1526619187
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1113527349,
+        "unit_type": 0
+      },
+      "id": 1113527349
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          "1.409548508469",
+          "1.409548508469",
+          "1.409548508469"
+        ],
+        "unit_eid": 0,
+        "unit_id": 1871115026,
+        "unit_type": 0
+      },
+      "id": 1871115026
+    }
+  ],
+  "units_by_id": {
+    "1": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 0,
+      "unit_id": 1,
+      "unit_type": 128
+    },
+    "1001": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 0,
+      "unit_id": 1001,
+      "unit_type": 0
+    },
+    "1002": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 0,
+      "unit_id": 1002,
+      "unit_type": 0
+    },
+    "1003": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 0,
+      "unit_id": 1003,
+      "unit_type": 0
+    },
+    "1046549468": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1046549468,
+      "unit_type": 0
+    },
+    "1049337671": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1049337671,
+      "unit_type": 0
+    },
+    "1071686662": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1071686662,
+      "unit_type": 0
+    },
+    "1073545956": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1073545956,
+      "unit_type": 0
+    },
+    "1077989550": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1077989550,
+      "unit_type": 0
+    },
+    "1111935546": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1111935546,
+      "unit_type": 0
+    },
+    "1113527349": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1113527349,
+      "unit_type": 0
+    },
+    "1129524711": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1129524711,
+      "unit_type": 0
+    },
+    "1133872834": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1133872834,
+      "unit_type": 0
+    },
+    "1164709328": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1164709328,
+      "unit_type": 0
+    },
+    "1178734738": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1178734738,
+      "unit_type": 0
+    },
+    "1191046992": {
+      "create_probability": 1.0,
+      "fix_destroy_time": -1,
+      "model_alpha": "0.8499999998603",
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 19000045,
+      "name": "LLK_YAxis_bottom_z_min",
+      "parent_unit_id": 0,
+      "physic_enable": false,
+      "position": [
+        -23.252,
+        -1.0,
+        -11.5
+      ],
+      "prefab_id": 105700,
+      "scale": [
+        23.749734963523,
+        0.059999999823049,
+        0.059999999823049
+      ],
+      "unit_eid": 105700,
+      "unit_id": 1191046992,
+      "unit_type": 256,
+      "unit_uid": "105700_uid",
+      "world_position": [
+        -23.252,
+        -1.0,
+        -11.5
+      ]
+    },
+    "1193608358": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1193608358,
+      "unit_type": 0
+    },
+    "1204277840": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1204277840,
+      "unit_type": 0
+    },
+    "1242154569": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1242154569,
+      "unit_type": 0
+    },
+    "1254695097": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1254695097,
+      "unit_type": 0
+    },
+    "1279045625": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1279045625,
+      "unit_type": 0
+    },
+    "1293982738": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1293982738,
+      "unit_type": 0
+    },
+    "1302698444": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1302698444,
+      "unit_type": 0
+    },
+    "1335787914": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1335787914,
+      "unit_type": 0
+    },
+    "1357102836": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1357102836,
+      "unit_type": 0
+    },
+    "1395899394": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1395899394,
+      "unit_type": 0
+    },
+    "1399824806": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1399824806,
+      "unit_type": 0
+    },
+    "1401993508": {
+      "model_angle": [
+        -0.0,
+        -90.0,
+        0.0
+      ],
+      "model_id": 90007,
+      "name": "分阵营出生点1",
+      "parent_unit_id": 0,
+      "position": [
+        -5.0,
+        2.0,
+        0.0
+      ],
+      "prefab_id": 600005,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 600005,
+      "unit_id": 1401993508,
+      "unit_type": 16384,
+      "unit_uid": "600005_uid",
+      "world_position": [
+        -5.0,
+        2.0,
+        0.0
+      ]
+    },
+    "1404468527": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1404468527,
+      "unit_type": 0
+    },
+    "1406126625": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1406126625,
+      "unit_type": 0
+    },
+    "1413632294": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1413632294,
+      "unit_type": 0
+    },
+    "1413842355": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1413842355,
+      "unit_type": 0
+    },
+    "1418247933": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1418247933,
+      "unit_type": 0
+    },
+    "1423197915": {
+      "create_probability": 1.0,
+      "fix_destroy_time": -1,
+      "model_alpha": "0.8499999998603",
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 19000045,
+      "name": "LLK_YAxis_bottom_x_max",
+      "parent_unit_id": 0,
+      "physic_enable": false,
+      "position": [
+        0.498,
+        -1.0,
+        0.25
+      ],
+      "prefab_id": 105700,
+      "scale": [
+        0.059999999823049,
+        0.059999999823049,
+        11.75000071479
+      ],
+      "unit_eid": 105700,
+      "unit_id": 1423197915,
+      "unit_type": 256,
+      "unit_uid": "105700_uid",
+      "world_position": [
+        0.498,
+        -1.0,
+        0.25
+      ]
+    },
+    "1450156080": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1450156080,
+      "unit_type": 0
+    },
+    "1465435450": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1465435450,
+      "unit_type": 0
+    },
+    "1470663561": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1470663561,
+      "unit_type": 0
+    },
+    "1491693774": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1491693774,
+      "unit_type": 0
+    },
+    "1505000620": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1505000620,
+      "unit_type": 0
+    },
+    "1526619187": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1526619187,
+      "unit_type": 0
+    },
+    "1548368039": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1548368039,
+      "unit_type": 0
+    },
+    "1549097709": {
+      "create_probability": 1.0,
+      "fix_destroy_time": -1,
+      "model_alpha": "0.8499999998603",
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 19000045,
+      "name": "LLK_YAxis_middle_z_min",
+      "parent_unit_id": 0,
+      "physic_enable": false,
+      "position": [
+        -23.252,
+        0.0,
+        -11.5
+      ],
+      "prefab_id": 105700,
+      "scale": [
+        23.749734963523,
+        0.059999999823049,
+        0.059999999823049
+      ],
+      "unit_eid": 105700,
+      "unit_id": 1549097709,
+      "unit_type": 256,
+      "unit_uid": "105700_uid",
+      "world_position": [
+        -23.252,
+        0.0,
+        -11.5
+      ]
+    },
+    "1555904951": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1555904951,
+      "unit_type": 0
+    },
+    "1558470313": {
+      "create_probability": 1.0,
+      "fix_destroy_time": -1,
+      "model_alpha": "0.8499999998603",
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 19000045,
+      "name": "LLK_YAxis_middle_z_max",
+      "parent_unit_id": 0,
+      "physic_enable": false,
+      "position": [
+        -23.252,
+        0.0,
+        12.0
+      ],
+      "prefab_id": 105700,
+      "scale": [
+        23.749734963523,
+        0.059999999823049,
+        0.059999999823049
+      ],
+      "unit_eid": 105700,
+      "unit_id": 1558470313,
+      "unit_type": 256,
+      "unit_uid": "105700_uid",
+      "world_position": [
+        -23.252,
+        0.0,
+        12.0
+      ]
+    },
+    "1567961424": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1567961424,
+      "unit_type": 0
+    },
+    "1581315092": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1581315092,
+      "unit_type": 0
+    },
+    "1586092004": {
+      "create_probability": 1.0,
+      "fix_destroy_time": -1,
+      "model_alpha": "0.8499999998603",
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 19000045,
+      "name": "LLK_YAxis_middle_x_max",
+      "parent_unit_id": 0,
+      "physic_enable": false,
+      "position": [
+        0.498,
+        0.0,
+        0.25
+      ],
+      "prefab_id": 105700,
+      "scale": [
+        0.059999999823049,
+        0.059999999823049,
+        11.75000071479
+      ],
+      "unit_eid": 105700,
+      "unit_id": 1586092004,
+      "unit_type": 256,
+      "unit_uid": "105700_uid",
+      "world_position": [
+        0.498,
+        0.0,
+        0.25
+      ]
+    },
+    "1587127163": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1587127163,
+      "unit_type": 0
+    },
+    "1609220428": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1609220428,
+      "unit_type": 0
+    },
+    "1616928822": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1616928822,
+      "unit_type": 0
+    },
+    "1626884833": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1626884833,
+      "unit_type": 0
+    },
+    "1646479093": {
+      "create_probability": 1.0,
+      "fix_destroy_time": -1,
+      "model_alpha": "0.8499999998603",
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 19000045,
+      "name": "LLK_YAxis_bottom_x_min",
+      "parent_unit_id": 0,
+      "physic_enable": false,
+      "position": [
+        -47.002,
+        -1.0,
+        0.25
+      ],
+      "prefab_id": 105700,
+      "scale": [
+        0.059999999823049,
+        0.059999999823049,
+        11.75000071479
+      ],
+      "unit_eid": 105700,
+      "unit_id": 1646479093,
+      "unit_type": 256,
+      "unit_uid": "105700_uid",
+      "world_position": [
+        -47.002,
+        -1.0,
+        0.25
+      ]
+    },
+    "1655602474": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1655602474,
+      "unit_type": 0
+    },
+    "1657449954": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1657449954,
+      "unit_type": 0
+    },
+    "1659908604": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1659908604,
+      "unit_type": 0
+    },
+    "1664312758": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1664312758,
+      "unit_type": 0
+    },
+    "1665273377": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1665273377,
+      "unit_type": 0
+    },
+    "1674491605": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1674491605,
+      "unit_type": 0
+    },
+    "1681499584": {
+      "create_probability": 1.0,
+      "emissive_intensity_1": 0.5,
+      "enable_hp": false,
+      "fix_destroy_time": -1,
+      "material_metalness_1": 0.0,
+      "material_roughness_1": 1.0,
+      "model_angle": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "model_id": 90004,
+      "name": "地砖0",
+      "ob_max_hp": 0,
+      "parent_unit_id": 0,
+      "physic_enable": true,
+      "position": [
+        -23.252,
+        0.0,
+        0.25
+      ],
+      "prefab_id": 1201010,
+      "scale": [
+        3.166631328418,
+        1.0,
+        2.3500001430511
+      ],
+      "unit_eid": 1201010,
+      "unit_id": 1681499584,
+      "unit_type": 256,
+      "unit_uid": "floor_3",
+      "world_position": [
+        -23.252,
+        0.0,
+        0.25
+      ]
+    },
+    "1682760674": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1682760674,
+      "unit_type": 0
+    },
+    "1698315884": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1698315884,
+      "unit_type": 0
+    },
+    "1701608838": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1701608838,
+      "unit_type": 0
+    },
+    "1726439884": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1726439884,
+      "unit_type": 0
+    },
+    "1743317506": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1743317506,
+      "unit_type": 0
+    },
+    "1749102576": {
+      "create_probability": 1.0,
+      "fix_destroy_time": -1,
+      "model_alpha": "0.8499999998603",
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 19000045,
+      "name": "LLK_YAxis_top_x_max",
+      "parent_unit_id": 0,
+      "physic_enable": false,
+      "position": [
+        0.498,
+        1.0,
+        0.25
+      ],
+      "prefab_id": 105700,
+      "scale": [
+        0.059999999823049,
+        0.059999999823049,
+        11.75000071479
+      ],
+      "unit_eid": 105700,
+      "unit_id": 1749102576,
+      "unit_type": 256,
+      "unit_uid": "105700_uid",
+      "world_position": [
+        0.498,
+        1.0,
+        0.25
+      ]
+    },
+    "1766897768": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1766897768,
+      "unit_type": 0
+    },
+    "1767419032": {
+      "create_probability": 1.0,
+      "fix_destroy_time": -1,
+      "model_alpha": "0.8499999998603",
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 19000045,
+      "name": "LLK_YAxis_top_z_max",
+      "parent_unit_id": 0,
+      "physic_enable": false,
+      "position": [
+        -23.252,
+        1.0,
+        12.0
+      ],
+      "prefab_id": 105700,
+      "scale": [
+        23.749734963523,
+        0.059999999823049,
+        0.059999999823049
+      ],
+      "unit_eid": 105700,
+      "unit_id": 1767419032,
+      "unit_type": 256,
+      "unit_uid": "105700_uid",
+      "world_position": [
+        -23.252,
+        1.0,
+        12.0
+      ]
+    },
+    "1768768983": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1768768983,
+      "unit_type": 0
+    },
+    "1776731522": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1776731522,
+      "unit_type": 0
+    },
+    "1787622883": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1787622883,
+      "unit_type": 0
+    },
+    "1788423753": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1788423753,
+      "unit_type": 0
+    },
+    "1805574540": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1805574540,
+      "unit_type": 0
+    },
+    "1841800625": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1841800625,
+      "unit_type": 0
+    },
+    "1843385088": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1843385088,
+      "unit_type": 0
+    },
+    "1849088970": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1849088970,
+      "unit_type": 0
+    },
+    "1857166230": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1857166230,
+      "unit_type": 0
+    },
+    "1871115026": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1871115026,
+      "unit_type": 0
+    },
+    "1893219095": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1893219095,
+      "unit_type": 0
+    },
+    "1931411198": {
+      "model_angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model_id": 90002,
+      "name": "相机路径0",
+      "parent_unit_id": 0,
+      "position": [
+        99999.0,
+        99999.0,
+        99999.0
+      ],
+      "prefab_id": 3201063,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 3201063,
+      "unit_id": 1931411198,
+      "unit_type": 2048,
+      "unit_uid": "3201063_uid",
+      "world_position": [
+        99999.0,
+        99999.0,
+        99999.0
+      ]
+    },
+    "1966886415": {
+      "create_probability": 1.0,
+      "fix_destroy_time": -1,
+      "model_alpha": "0.8499999998603",
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 19000045,
+      "name": "LLK_YAxis_middle_x_min",
+      "parent_unit_id": 0,
+      "physic_enable": false,
+      "position": [
+        -47.002,
+        0.0,
+        0.25
+      ],
+      "prefab_id": 105700,
+      "scale": [
+        0.059999999823049,
+        0.059999999823049,
+        11.75000071479
+      ],
+      "unit_eid": 105700,
+      "unit_id": 1966886415,
+      "unit_type": 256,
+      "unit_uid": "105700_uid",
+      "world_position": [
+        -47.002,
+        0.0,
+        0.25
+      ]
+    },
+    "1969596646": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1969596646,
+      "unit_type": 0
+    },
+    "1970628930": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1970628930,
+      "unit_type": 0
+    },
+    "1978008993": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1978008993,
+      "unit_type": 0
+    },
+    "1991563928": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 1991563928,
+      "unit_type": 0
+    },
+    "2005137678": {
+      "create_probability": 1.0,
+      "fix_destroy_time": -1,
+      "model_alpha": "0.8499999998603",
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 19000045,
+      "name": "LLK_YAxis_bottom_z_max",
+      "parent_unit_id": 0,
+      "physic_enable": false,
+      "position": [
+        -23.252,
+        -1.0,
+        12.0
+      ],
+      "prefab_id": 105700,
+      "scale": [
+        23.749734963523,
+        0.059999999823049,
+        0.059999999823049
+      ],
+      "unit_eid": 105700,
+      "unit_id": 2005137678,
+      "unit_type": 256,
+      "unit_uid": "105700_uid",
+      "world_position": [
+        -23.252,
+        -1.0,
+        12.0
+      ]
+    },
+    "2016866571": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 2016866571,
+      "unit_type": 0
+    },
+    "2075737132": {
+      "create_probability": 1.0,
+      "fix_destroy_time": -1,
+      "model_alpha": "0.8499999998603",
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 19000045,
+      "name": "LLK_YAxis_top_x_min",
+      "parent_unit_id": 0,
+      "physic_enable": false,
+      "position": [
+        -47.002,
+        1.0,
+        0.25
+      ],
+      "prefab_id": 105700,
+      "scale": [
+        0.059999999823049,
+        0.059999999823049,
+        11.75000071479
+      ],
+      "unit_eid": 105700,
+      "unit_id": 2075737132,
+      "unit_type": 256,
+      "unit_uid": "105700_uid",
+      "world_position": [
+        -47.002,
+        1.0,
+        0.25
+      ]
+    },
+    "2101523385": {
+      "create_probability": 1.0,
+      "fix_destroy_time": -1,
+      "model_alpha": "0.8499999998603",
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 19000045,
+      "name": "LLK_YAxis_top_z_min",
+      "parent_unit_id": 0,
+      "physic_enable": false,
+      "position": [
+        -23.252,
+        1.0,
+        -11.5
+      ],
+      "prefab_id": 105700,
+      "scale": [
+        23.749734963523,
+        0.059999999823049,
+        0.059999999823049
+      ],
+      "unit_eid": 105700,
+      "unit_id": 2101523385,
+      "unit_type": 256,
+      "unit_uid": "105700_uid",
+      "world_position": [
+        -23.252,
+        1.0,
+        -11.5
+      ]
+    },
+    "2116424657": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 2116424657,
+      "unit_type": 0
+    },
+    "2125934027": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "1.409548508469",
+        "1.409548508469",
+        "1.409548508469"
+      ],
+      "unit_eid": 0,
+      "unit_id": 2125934027,
+      "unit_type": 0
+    },
+    "2140109088": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        "-1.3152441456914",
+        "-1.3152441456914",
+        "-1.3152441456914"
+      ],
+      "unit_eid": 0,
+      "unit_id": 2140109088,
+      "unit_type": 0
+    }
+  }
+}
