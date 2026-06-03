@@ -20,6 +20,7 @@ import {
   GRID_TILE_BUTTON_CIRCLE_NODE_ID,
   GRID_TILE_BUTTON_OFFSET_Y,
   GRID_TILE_BUTTONS_PER_FRAME,
+  GRID_TILE_BUTTONS_VISIBLE,
   GRID_TILE_CLICK_PROXIES_PER_FRAME,
   GRID_TILE_CLICK_PROXY_COLOR,
   GRID_TILE_CLICK_PROXY_SCALE_X,
@@ -35,6 +36,7 @@ import {
   GRID_TILE_STICKERS_PER_FRAME,
   STICKER_SOURCES,
   TILE_HEIGHT_MARK_DURATION,
+  TILE_HEIGHT_MARKERS_VISIBLE,
 } from "./config"
 import { flattenGridCells, getGridBounds } from "./grid"
 import { enableGridTileTouchTarget, registerGridTileButtonTouch, registerGridTileUnitTouch } from "./touch"
@@ -64,7 +66,9 @@ function createGridTileBlocksBatch(cells: LlkGridCell[], startIndex: number, cre
     })
   } else {
     print(`[GridTileBlocks] created=${created}/${GRID_ROWS * GRID_COLUMNS} unit_id=${GRID_TILE_BLOCK_UNIT_ID} scale=(${GRID_TILE_BLOCK_SCALE_X},${GRID_TILE_BLOCK_SCALE_Y},${GRID_TILE_BLOCK_SCALE_Z}) per_frame=${GRID_TILE_BLOCKS_PER_FRAME}`)
-    drawTileHeightMarkers(cells)
+    if (TILE_HEIGHT_MARKERS_VISIBLE) {
+      drawTileHeightMarkers(cells)
+    }
     createGridTileSurfaceStickers(cells, onClick)
   }
 }
@@ -211,7 +215,12 @@ function createGridTileClickProxiesBatch(cells: LlkGridCell[], startIndex: numbe
     })
   } else {
     print(`[GridTileClickProxies] created=${created}/${GRID_ROWS * GRID_COLUMNS} unit_id=${GRID_TILE_CLICK_PROXY_UNIT_ID} scale=(${GRID_TILE_CLICK_PROXY_SCALE_X},${GRID_TILE_CLICK_PROXY_SCALE_Y},${GRID_TILE_CLICK_PROXY_SCALE_Z}) button_offset_y=${GRID_TILE_BUTTON_OFFSET_Y} per_frame=${GRID_TILE_CLICK_PROXIES_PER_FRAME}`)
-    createGridTileButtons(cells, onClick)
+    if (GRID_TILE_BUTTONS_VISIBLE) {
+      createGridTileButtons(cells, onClick)
+    } else {
+      print("[GridTileButtons] skipped visible=false click_proxy_touch=true")
+      auditGridTileBindings(cells, false)
+    }
   }
 }
 
@@ -234,8 +243,19 @@ function createGridTileClickProxy(cell: LlkGridCell, onClick: GridCellClickHandl
   cell.clickProxyUnit = created
   setGridTileBlockPaintColor(created, GRID_TILE_CLICK_PROXY_COLOR)
   enableGridTileTouchTarget(created, "click_proxy")
+  hideClickProxyModel(created)
   cell.clickProxyTouchRegistered = registerGridTileUnitTouch(cell, created, "click-proxy", onClick)
   return true
+}
+
+function hideClickProxyModel(unit: any): void {
+  safeCall(
+    () => {
+      unit.set_model_visible(false)
+      return true
+    },
+    { tag: "llk_hide_click_proxy_model", fallback: false, logger: print },
+  )
 }
 
 function createGridTileButtons(cells: LlkGridCell[], onClick: GridCellClickHandler): void {
@@ -262,7 +282,7 @@ function createGridTileButtonsBatch(cells: LlkGridCell[], startIndex: number, cr
     })
   } else {
     print(`[GridTileButtons] created=${created}/${GRID_ROWS * GRID_COLUMNS} bound_nodes=${bound}/${GRID_ROWS * GRID_COLUMNS} base_layer_id=${GRID_TILE_BUTTON_BASE_LAYER_ID} circle_layer_id=${GRID_TILE_BUTTON_CIRCLE_LAYER_ID} offset_y=${GRID_TILE_BUTTON_OFFSET_Y} per_frame=${GRID_TILE_BUTTONS_PER_FRAME}`)
-    auditGridTileBindings(cells)
+    auditGridTileBindings(cells, true)
     refreshGridTileButtonVisibility(cells, 1)
   }
 }
@@ -503,7 +523,7 @@ function drawBlockAxesAtY(centerX: number, centerZ: number, halfX: number, halfZ
   ;(GameAPI as any).draw_line(math.Vector3(asFixed(centerX), asFixed(y), asFixed(centerZ - halfZ)), math.Vector3(asFixed(centerX), asFixed(y), asFixed(centerZ + halfZ)), color, asFixed(TILE_HEIGHT_MARK_DURATION))
 }
 
-function auditGridTileBindings(cells: LlkGridCell[]): void {
+function auditGridTileBindings(cells: LlkGridCell[], requireButton: boolean): void {
   let playable = 0
   let missingTile = 0
   let missingSticker = 0
@@ -556,9 +576,9 @@ function auditGridTileBindings(cells: LlkGridCell[]): void {
       }
     }
 
-    if (cell.buttonLayer === null || cell.buttonLayer === undefined || cell.buttonNode === null || cell.buttonNode === undefined || cell.buttonPosition === null) {
+    if (requireButton && (cell.buttonLayer === null || cell.buttonLayer === undefined || cell.buttonNode === null || cell.buttonNode === undefined || cell.buttonPosition === null)) {
       missingButton += 1
-    } else if (math.abs(cell.buttonPosition.x - expectedX) > 0.01 || math.abs(cell.buttonPosition.z - expectedZ) > 0.01) {
+    } else if (requireButton && cell.buttonPosition !== null && (math.abs(cell.buttonPosition.x - expectedX) > 0.01 || math.abs(cell.buttonPosition.z - expectedZ) > 0.01)) {
       badButtonXZ += 1
     }
 
@@ -582,15 +602,15 @@ function auditGridTileBindings(cells: LlkGridCell[]): void {
     if (!cell.clickProxyTouchRegistered) {
       missingClickProxyTouch += 1
     }
-    if (cell.buttonTouchBindingCount <= 0) {
+    if (requireButton && cell.buttonTouchBindingCount <= 0) {
       missingButtonTouch += 1
     }
-    if (cell.buttonTouchBindingCount >= 3) {
+    if (requireButton && cell.buttonTouchBindingCount >= 3) {
       fullButtonTouch += 1
     }
   }
 
-  print(`[GridTileBindingAudit] playable=${playable} missingTile=${missingTile} missingSticker=${missingSticker} missingButton=${missingButton} missingClickProxy=${missingClickProxy} badTileXZ=${badTileXZ} badStickerXZ=${badStickerXZ} badButtonXZ=${badButtonXZ} badClickProxyXZ=${badClickProxyXZ} missingTileTouch=${missingTileTouch} missingClickProxyTouch=${missingClickProxyTouch} missingButtonTouch=${missingButtonTouch} fullButtonTouch=${fullButtonTouch}`)
+  print(`[GridTileBindingAudit] playable=${playable} requireButton=${requireButton} missingTile=${missingTile} missingSticker=${missingSticker} missingButton=${missingButton} missingClickProxy=${missingClickProxy} badTileXZ=${badTileXZ} badStickerXZ=${badStickerXZ} badButtonXZ=${badButtonXZ} badClickProxyXZ=${badClickProxyXZ} missingTileTouch=${missingTileTouch} missingClickProxyTouch=${missingClickProxyTouch} missingButtonTouch=${missingButtonTouch} fullButtonTouch=${fullButtonTouch}`)
 }
 
 export function destroyCellVisuals(cell: LlkGridCell): void {

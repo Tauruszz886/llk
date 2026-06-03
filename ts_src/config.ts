@@ -21,7 +21,7 @@ export const TILE_CENTER_X = -23.2519999999
 export const TILE_CENTER_Z = 0.25
 export const GRID_LINE_Y = 2.05
 export const GRID_LINE_DURATION = 9999
-export const GRID_LINES_VISIBLE = true
+export const GRID_LINES_VISIBLE = false
 
 export const GRID_TILE_BLOCK_UNIT_ID = 105205
 export const GRID_TILE_BLOCK_Y = 2.55
@@ -47,6 +47,7 @@ export const GRID_TILE_BUTTON_BASE_NODE_ID = "1328312114"
 export const GRID_TILE_BUTTON_CIRCLE_NODE_ID = "1892680078"
 export const GRID_TILE_BUTTON_OFFSET_Y = 0.1
 export const GRID_TILE_BUTTONS_PER_FRAME = 20
+export const GRID_TILE_BUTTONS_VISIBLE = false
 export const GRID_TILE_UI_TOUCH_EVENT_TYPES = [0, 1, 2, 3]
 
 export const GRID_TILE_CLICK_PROXY_UNIT_ID = 105205
@@ -58,6 +59,7 @@ export const GRID_TILE_CLICK_PROXY_SELECTED_COLOR = "FFE066"
 export const GRID_TILE_CLICK_PROXIES_PER_FRAME = 20
 
 export const TILE_HEIGHT_MARK_DURATION = 9999
+export const TILE_HEIGHT_MARKERS_VISIBLE = false
 export const BLOCK_AXIS_SAMPLE_ONLY = false
 export const LLK_MAX_TURNS = 2
 

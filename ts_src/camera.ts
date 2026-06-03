@@ -15,6 +15,8 @@ import {
 } from "./config"
 import { asFixed } from "./utils"
 
+const CAMERA_STABILIZE_FRAME_DELAYS = [1, 30, 90, 180, 300]
+
 export function applyCanvasFramingCamera(role: any): void {
   safeCall(
     () => {
@@ -131,21 +133,27 @@ export function lockRuntimeCamera(): number {
     applyCanvasFramingCamera(roles[index] as any)
     disableJoystickControl(roles[index] as any)
   }
-  refreshCanvasLock(1)
+  stabilizeCanvasCamera(0)
   return roles.length
 }
 
-function refreshCanvasLock(attempt: number): void {
+function stabilizeCanvasCamera(attemptIndex: number): void {
+  if (attemptIndex >= CAMERA_STABILIZE_FRAME_DELAYS.length) {
+    return
+  }
+
+  const delayFrames = CAMERA_STABILIZE_FRAME_DELAYS[attemptIndex]
+  ;(LuaAPI as any).call_delay_frame(delayFrames, () => {
+    applyCanvasCameraToCurrentRoles(attemptIndex + 1)
+    stabilizeCanvasCamera(attemptIndex + 1)
+  })
+}
+
+function applyCanvasCameraToCurrentRoles(attempt: number): void {
   const currentRoles = GameAPI.get_all_roles()
   for (let index = 0; index < currentRoles.length; index += 1) {
     applyCanvasFramingCamera(currentRoles[index] as any)
     disableJoystickControl(currentRoles[index] as any)
   }
-  print(`[CameraLocked] attempt=${attempt} role_count=${currentRoles.length}`)
-
-  if (attempt < 5) {
-    ;(LuaAPI as any).call_delay_frame(30, () => {
-      refreshCanvasLock(attempt + 1)
-    })
-  }
+  print(`[CameraStabilized] attempt=${attempt} role_count=${currentRoles.length}`)
 }
