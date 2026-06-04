@@ -1,8 +1,8 @@
-import { EMPTY_GRID_VALUE, GRID_COLUMNS, GRID_ROWS } from "./config"
+import { EMPTY_GRID_VALUE, GRID_COLUMNS, GRID_ROWS, LLK_MATCH_CLEAR_DELAY_FRAMES } from "./config"
 import { isPlayableCell, isSameGridCell } from "./grid"
 import { canLinkCells } from "./path"
-import type { GridCellClickHandler, LlkGridCell } from "./types"
-import { destroyCellVisuals, setCellSelected } from "./visuals"
+import type { GridCellClickHandler, LinkPathResult, LlkGridCell } from "./types"
+import { createLinkPathVisual, destroyCellVisuals, destroyLinkPathVisual, setCellSelected } from "./visuals"
 
 export type LlkGameplay = {
   handleGridTileClickEvent: GridCellClickHandler
@@ -13,17 +13,21 @@ export function createLlkGameplay(grid: LlkGridCell[][]): LlkGameplay {
   let matchedTileCount = 0
   let gridClickLocked = false
 
-  function matchCells(first: LlkGridCell, second: LlkGridCell): void {
+  function matchCells(first: LlkGridCell, second: LlkGridCell, linkPath: LinkPathResult): void {
     const matchedValue = first.value
+    const linkVisual = createLinkPathVisual(linkPath, first)
     first.matched = true
     second.matched = true
     first.value = EMPTY_GRID_VALUE
     second.value = EMPTY_GRID_VALUE
-    destroyCellVisuals(first)
-    destroyCellVisuals(second)
     selectedCell = null
     matchedTileCount += 2
-    print(`[LlkMatch] removed first=(${first.row},${first.column}) second=(${second.row},${second.column}) value=${matchedValue} matched=${matchedTileCount}/${GRID_ROWS * GRID_COLUMNS - 1}`)
+    ;(LuaAPI as any).call_delay_frame(LLK_MATCH_CLEAR_DELAY_FRAMES, () => {
+      destroyCellVisuals(first)
+      destroyCellVisuals(second)
+      destroyLinkPathVisual(linkVisual)
+      print(`[LlkMatch] removed first=(${first.row},${first.column}) second=(${second.row},${second.column}) value=${matchedValue} matched=${matchedTileCount}/${GRID_ROWS * GRID_COLUMNS - 1}`)
+    })
   }
 
   function handleGridTileClick(cell: LlkGridCell, touchSource: string): void {
@@ -56,8 +60,9 @@ export function createLlkGameplay(grid: LlkGridCell[][]): LlkGameplay {
       return
     }
 
-    if (canLinkCells(grid, first, cell)) {
-      matchCells(first, cell)
+    const linkPath = canLinkCells(grid, first, cell)
+    if (linkPath !== null) {
+      matchCells(first, cell, linkPath)
       return
     }
 
@@ -74,10 +79,10 @@ export function createLlkGameplay(grid: LlkGridCell[][]): LlkGameplay {
     }
 
     gridClickLocked = true
+    handleGridTileClick(cell, touchSource)
     ;(LuaAPI as any).call_delay_frame(1, () => {
       gridClickLocked = false
     })
-    handleGridTileClick(cell, touchSource)
   }
 
   return { handleGridTileClickEvent }

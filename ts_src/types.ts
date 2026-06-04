@@ -29,6 +29,9 @@ export type LlkGridCell = {
   buttonPosition: Vector3 | null
   stickerPitch: number
   clickProxyUnit: any
+  selectionEffectUnit: any
+  selectionRangeUnits: any[]
+  selectionVisualToken: number
   tileTouchRegistered: boolean
   clickProxyTouchRegistered: boolean
   buttonTouchBindingCount: number
@@ -50,6 +53,27 @@ export type PathSearchState = {
   column: number
   direction: number
   turns: number
+  previousIndex: number
 }
 
 export type GridCellClickHandler = (cell: LlkGridCell, touchSource: string) => void
+
+export type LinkPathPoint = {
+  row: number
+  column: number
+}
+
+export type LinkPathResult = {
+  points: LinkPathPoint[]
+  turns: number
+}
+
+export type LinkVisualHandle = {
+  anchorUnits: any[]
+  sfxIds: any[]
+  effectUnits: any[]
+  effectOuterUnits: any[]
+  effectCoreUnits: any[]
+  effectNodeUnits: any[]
+  fallbackModelCreated: boolean
+}

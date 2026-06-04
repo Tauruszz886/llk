@@ -7,10 +7,13 @@ import {
   GRID_LINE_DURATION,
   GRID_ROWS,
   GRID_TILE_BLOCK_COLOR,
+  GRID_TILE_BLOCK_DECORATION_SCALE_X,
+  GRID_TILE_BLOCK_DECORATION_SCALE_Y,
+  GRID_TILE_BLOCK_DECORATION_SCALE_Z,
   GRID_TILE_BLOCK_SCALE_X,
   GRID_TILE_BLOCK_SCALE_Y,
   GRID_TILE_BLOCK_SCALE_Z,
-  GRID_TILE_BLOCK_SELECTED_COLOR,
+  GRID_TILE_BLOCK_USE_DECORATION,
   GRID_TILE_BLOCK_UNIT_ID,
   GRID_TILE_BLOCK_Y,
   GRID_TILE_BLOCKS_PER_FRAME,
@@ -23,24 +26,62 @@ import {
   GRID_TILE_BUTTONS_VISIBLE,
   GRID_TILE_CLICK_PROXIES_PER_FRAME,
   GRID_TILE_CLICK_PROXY_COLOR,
+  GRID_TILE_CLICK_PROXY_EFFECT_ALT_COLOR,
+  GRID_TILE_CLICK_PROXY_EFFECT_COLOR,
+  GRID_TILE_CLICK_PROXY_EFFECT_PULSE_FRAMES,
   GRID_TILE_CLICK_PROXY_SCALE_X,
   GRID_TILE_CLICK_PROXY_SCALE_Y,
   GRID_TILE_CLICK_PROXY_SCALE_Z,
-  GRID_TILE_CLICK_PROXY_SELECTED_COLOR,
   GRID_TILE_CLICK_PROXY_UNIT_ID,
+  GRID_TILE_SELECTION_RANGE_EDGE_THICKNESS,
+  GRID_TILE_SELECTION_RANGE_HEIGHT,
+  GRID_TILE_SELECTION_RANGE_OFFSET_Y,
+  GRID_TILE_SELECTION_RANGE_UNIT_ID,
+  GRID_TILE_SELECTION_EFFECT_DECORATION_ID,
+  GRID_TILE_SELECTION_EFFECT_EDGE_HALF_SIZE,
+  GRID_TILE_SELECTION_EFFECT_EDGE_STEP_FRAMES,
+  GRID_TILE_SELECTION_EFFECT_EDGE_STEPS,
+  GRID_TILE_SELECTION_EFFECT_OFFSET_Y,
+  GRID_TILE_SELECTION_EFFECT_SCALE_X,
+  GRID_TILE_SELECTION_EFFECT_SCALE_Y,
+  GRID_TILE_SELECTION_EFFECT_SCALE_Z,
   GRID_TILE_STICKER_BACKWARD_PITCH,
   GRID_TILE_STICKER_RIGHT_YAW,
   GRID_TILE_STICKER_SCALE_Y,
   GRID_TILE_STICKER_SURFACE_OFFSET_Y,
   GRID_TILE_STICKER_TARGET_SIZE,
   GRID_TILE_STICKERS_PER_FRAME,
+  LLK_LINK_ANCHOR_SCALE,
+  LLK_LINK_ANCHOR_UNIT_ID,
+  LLK_LINK_FALLBACK_LINE_COLOR,
+  LLK_LINK_LIGHTNING_CORE_OFFSET_Y,
+  LLK_LINK_LIGHTNING_CORE_THICKNESS,
+  LLK_LINK_LIGHTNING_CORE_COLOR,
+  LLK_LINK_LIGHTNING_HEIGHT,
+  LLK_LINK_LIGHTNING_JITTER,
+  LLK_LINK_LIGHTNING_MAX_STEPS_PER_SEGMENT,
+  LLK_LINK_LIGHTNING_NODE_HEIGHT,
+  LLK_LINK_LIGHTNING_NODE_SIZE,
+  LLK_LINK_LIGHTNING_OUTER_THICKNESS,
+  LLK_LINK_LIGHTNING_PULSE_FRAMES,
+  LLK_LINK_LIGHTNING_STEP,
+  LLK_LINK_LIGHTNING_UNIT_ID,
+  LLK_LINK_MOVING_EFFECT_DECORATION_ID,
+  LLK_LINK_MOVING_EFFECT_SCALE_X,
+  LLK_LINK_MOVING_EFFECT_SCALE_Y,
+  LLK_LINK_MOVING_EFFECT_SCALE_Z,
+  LLK_LINK_MOVING_EFFECT_STEP_FRAMES,
+  LLK_LINK_SFX_DURATION,
+  LLK_LINK_SFX_ID,
+  LLK_LINK_SFX_OFFSET_Y,
+  LLK_MATCH_CLEAR_DELAY_FRAMES,
   STICKER_SOURCES,
   TILE_HEIGHT_MARK_DURATION,
   TILE_HEIGHT_MARKERS_VISIBLE,
 } from "./config"
 import { flattenGridCells, getGridBounds } from "./grid"
 import { enableGridTileTouchTarget, registerGridTileButtonTouch, registerGridTileUnitTouch } from "./touch"
-import type { GridCellClickHandler, LlkGridCell, StickerSource, TileHeightLevels } from "./types"
+import type { GridCellClickHandler, LinkPathResult, LinkVisualHandle, LlkGridCell, StickerSource, TileHeightLevels } from "./types"
 import { asFixed } from "./utils"
 
 export function createGridTileBlocks(grid: LlkGridCell[][], onClick: GridCellClickHandler): void {
@@ -56,7 +97,9 @@ function createGridTileBlocksBatch(cells: LlkGridCell[], startIndex: number, cre
     cell.tileUnit = createGridTileBlock(cell)
     if (cell.tileUnit !== null && cell.tileUnit !== undefined) {
       created += 1
-      cell.tileTouchRegistered = registerGridTileUnitTouch(cell, cell.tileUnit, "block", onClick)
+      if (!GRID_TILE_BLOCK_USE_DECORATION) {
+        cell.tileTouchRegistered = registerGridTileUnitTouch(cell, cell.tileUnit, "block", onClick)
+      }
     }
   }
 
@@ -65,7 +108,7 @@ function createGridTileBlocksBatch(cells: LlkGridCell[], startIndex: number, cre
       createGridTileBlocksBatch(cells, endIndex, created, onClick)
     })
   } else {
-    print(`[GridTileBlocks] created=${created}/${GRID_ROWS * GRID_COLUMNS} unit_id=${GRID_TILE_BLOCK_UNIT_ID} scale=(${GRID_TILE_BLOCK_SCALE_X},${GRID_TILE_BLOCK_SCALE_Y},${GRID_TILE_BLOCK_SCALE_Z}) per_frame=${GRID_TILE_BLOCKS_PER_FRAME}`)
+    print(`[GridTileBlocks] created=${created}/${GRID_ROWS * GRID_COLUMNS} unit_id=${GRID_TILE_BLOCK_UNIT_ID} logical_size=(${GRID_TILE_BLOCK_SCALE_X},${GRID_TILE_BLOCK_SCALE_Y},${GRID_TILE_BLOCK_SCALE_Z}) decoration_scale=(${GRID_TILE_BLOCK_DECORATION_SCALE_X},${GRID_TILE_BLOCK_DECORATION_SCALE_Y},${GRID_TILE_BLOCK_DECORATION_SCALE_Z}) use_decoration=${GRID_TILE_BLOCK_USE_DECORATION} per_frame=${GRID_TILE_BLOCKS_PER_FRAME}`)
     if (TILE_HEIGHT_MARKERS_VISIBLE) {
       drawTileHeightMarkers(cells)
     }
@@ -78,15 +121,35 @@ function createGridTileBlock(cell: LlkGridCell): any {
     return null
   }
 
-  const created = safeCreateObstacle(
-    GRID_TILE_BLOCK_UNIT_ID,
-    math.Vector3(asFixed(cell.x), asFixed(GRID_TILE_BLOCK_Y), asFixed(cell.z)),
-    math.Vector3(asFixed(GRID_TILE_BLOCK_SCALE_X), asFixed(GRID_TILE_BLOCK_SCALE_Y), asFixed(GRID_TILE_BLOCK_SCALE_Z)),
-    { tag: "llk_grid_tile_block", logger: print },
+  const position = math.Vector3(asFixed(cell.x), asFixed(GRID_TILE_BLOCK_Y), asFixed(cell.z))
+  const obstacleScale = math.Vector3(asFixed(GRID_TILE_BLOCK_SCALE_X), asFixed(GRID_TILE_BLOCK_SCALE_Y), asFixed(GRID_TILE_BLOCK_SCALE_Z))
+  const decorationScale = math.Vector3(
+    asFixed(GRID_TILE_BLOCK_DECORATION_SCALE_X),
+    asFixed(GRID_TILE_BLOCK_DECORATION_SCALE_Y),
+    asFixed(GRID_TILE_BLOCK_DECORATION_SCALE_Z),
   )
+  const created = GRID_TILE_BLOCK_USE_DECORATION
+    ? safeCreateDecoration(
+        GRID_TILE_BLOCK_UNIT_ID,
+        position,
+        math.Quaternion(0, 0, 0),
+        decorationScale,
+        undefined,
+        { tag: "llk_grid_tile_block_decoration", logger: print },
+      )
+    : safeCreateObstacle(
+        GRID_TILE_BLOCK_UNIT_ID,
+        position,
+        obstacleScale,
+        { tag: "llk_grid_tile_block", logger: print },
+      )
   if (created !== null && created !== undefined) {
-    setGridTileBlockColor(created)
-    enableGridTileTouchTarget(created, "tile")
+    if (!GRID_TILE_BLOCK_USE_DECORATION) {
+      setGridTileBlockColor(created)
+    }
+    if (!GRID_TILE_BLOCK_USE_DECORATION) {
+      enableGridTileTouchTarget(created, "tile")
+    }
   }
   return created
 }
@@ -95,12 +158,7 @@ export function setCellSelected(cell: LlkGridCell, selected: boolean): void {
   if (cell.matched) {
     return
   }
-  if (cell.tileUnit !== null && cell.tileUnit !== undefined) {
-    setGridTileBlockPaintColor(cell.tileUnit, selected ? GRID_TILE_BLOCK_SELECTED_COLOR : GRID_TILE_BLOCK_COLOR)
-  }
-  if (cell.clickProxyUnit !== null && cell.clickProxyUnit !== undefined) {
-    setGridTileBlockPaintColor(cell.clickProxyUnit, selected ? GRID_TILE_CLICK_PROXY_SELECTED_COLOR : GRID_TILE_CLICK_PROXY_COLOR)
-  }
+  setClickProxySelectionVisual(cell, selected)
 }
 
 function setGridTileBlockColor(unit: any): void {
@@ -118,6 +176,543 @@ function setGridTileBlockPaintColor(unit: any, colorText: string): void {
       { tag: `llk_grid_tile_block_color_area_${area}`, fallback: false, logger: print },
     )
   }
+}
+
+function setClickProxySelectionVisual(cell: LlkGridCell, selected: boolean): void {
+  if (cell.clickProxyUnit === null || cell.clickProxyUnit === undefined) {
+    return
+  }
+
+  cell.selectionVisualToken += 1
+  if (selected) {
+    createSelectionEffectVisual(cell)
+  } else {
+    destroySelectionEffectVisual(cell)
+    destroySelectionRangeVisual(cell)
+    setGridTileBlockPaintColor(cell.clickProxyUnit, GRID_TILE_CLICK_PROXY_COLOR)
+  }
+
+  safeCall(
+    () => {
+      cell.clickProxyUnit.set_model_visible(false)
+      return true
+    },
+    { tag: "llk_set_click_proxy_selection_visible", fallback: false, logger: print },
+  )
+  print(`[LlkSelectVisual] row=${cell.row} column=${cell.column} visible=${selected} layer=selection_decoration id=${GRID_TILE_SELECTION_EFFECT_DECORATION_ID} size=${GRID_TILE_SELECTION_EFFECT_SCALE_X}x${GRID_TILE_SELECTION_EFFECT_SCALE_Z}`)
+}
+
+export function createLinkPathVisual(path: LinkPathResult, first: LlkGridCell): LinkVisualHandle {
+  const handle: LinkVisualHandle = {
+    anchorUnits: [],
+    sfxIds: [],
+    effectUnits: [],
+    effectOuterUnits: [],
+    effectCoreUnits: [],
+    effectNodeUnits: [],
+    fallbackModelCreated: false,
+  }
+  if (path.points.length < 2) {
+    return handle
+  }
+
+  const y = getLinkLineY(first)
+  createMovingLinkPathEffect(handle, path, y)
+  handle.fallbackModelCreated = handle.effectUnits.length > 0
+  print(`[LlkLinkMoveEffect] created effect_units=${handle.effectUnits.length} id=${LLK_LINK_MOVING_EFFECT_DECORATION_ID} path_points=${path.points.length} turns=${path.turns} duration_frames=${LLK_MATCH_CLEAR_DELAY_FRAMES}`)
+  return handle
+}
+
+function createMovingLinkPathEffect(handle: LinkVisualHandle, path: LinkPathResult, y: number): void {
+  const start = getLinkPathWorldPosition(path.points[0].row, path.points[0].column, y)
+  const created = safeCreateDecoration(
+    LLK_LINK_MOVING_EFFECT_DECORATION_ID,
+    start,
+    math.Quaternion(asFixed(0), asFixed(0), asFixed(0)),
+    math.Vector3(
+      asFixed(LLK_LINK_MOVING_EFFECT_SCALE_X),
+      asFixed(LLK_LINK_MOVING_EFFECT_SCALE_Y),
+      asFixed(LLK_LINK_MOVING_EFFECT_SCALE_Z),
+    ),
+    undefined,
+    { tag: "llk_create_link_moving_effect_decoration", logger: print },
+  )
+  if (created === null || created === undefined) {
+    print(`[LlkLinkMoveEffect] failed id=${LLK_LINK_MOVING_EFFECT_DECORATION_ID}`)
+    return
+  }
+
+  handle.effectUnits.push(created)
+  animateMovingLinkPathEffect(handle, path, y, created, 1)
+}
+
+function animateMovingLinkPathEffect(handle: LinkVisualHandle, path: LinkPathResult, y: number, unit: any, frame: number): void {
+  if (frame > LLK_MATCH_CLEAR_DELAY_FRAMES || handle.effectUnits.length === 0) {
+    return
+  }
+
+  const position = getMovingLinkPathPosition(path, y, frame / LLK_MATCH_CLEAR_DELAY_FRAMES)
+  safeCall(
+    () => {
+      unit.set_position(position)
+      return true
+    },
+    { tag: "llk_move_link_moving_effect_decoration", fallback: false, logger: print },
+  )
+
+  ;(LuaAPI as any).call_delay_frame(LLK_LINK_MOVING_EFFECT_STEP_FRAMES, () => {
+    animateMovingLinkPathEffect(handle, path, y, unit, frame + LLK_LINK_MOVING_EFFECT_STEP_FRAMES)
+  })
+}
+
+function getMovingLinkPathPosition(path: LinkPathResult, y: number, progress: number): Vector3 {
+  const clampedProgress = math.max(0, math.min(1, progress))
+  let totalLength = 0
+  for (let index = 0; index < path.points.length - 1; index += 1) {
+    const start = path.points[index]
+    const finish = path.points[index + 1]
+    totalLength += math.abs(finish.column - start.column) + math.abs(finish.row - start.row)
+  }
+  if (totalLength <= 0) {
+    const point = path.points[0]
+    return getLinkPathWorldPosition(point.row, point.column, y)
+  }
+
+  let remaining = totalLength * clampedProgress
+  for (let index = 0; index < path.points.length - 1; index += 1) {
+    const start = path.points[index]
+    const finish = path.points[index + 1]
+    const segmentLength = math.abs(finish.column - start.column) + math.abs(finish.row - start.row)
+    if (segmentLength <= 0) {
+      continue
+    }
+    if (remaining <= segmentLength) {
+      const t = remaining / segmentLength
+      const startWorld = getLinkPathWorldPosition(start.row, start.column, y)
+      const finishWorld = getLinkPathWorldPosition(finish.row, finish.column, y)
+      return math.Vector3(
+        asFixed(startWorld.x + (finishWorld.x - startWorld.x) * t),
+        asFixed(y),
+        asFixed(startWorld.z + (finishWorld.z - startWorld.z) * t),
+      )
+    }
+    remaining -= segmentLength
+  }
+
+  const last = path.points[path.points.length - 1]
+  return getLinkPathWorldPosition(last.row, last.column, y)
+}
+
+function createFallbackLinkPathLightning(handle: LinkVisualHandle, path: LinkPathResult, y: number): void {
+  let createdPieces = 0
+  for (let index = 0; index < path.points.length; index += 1) {
+    const point = getLinkPathWorldPosition(path.points[index].row, path.points[index].column, y + LLK_LINK_LIGHTNING_CORE_OFFSET_Y)
+    createdPieces += createLightningNode(handle, point)
+  }
+  for (let index = 0; index < path.points.length - 1; index += 1) {
+    const start = getLinkPathWorldPosition(path.points[index].row, path.points[index].column, y)
+    const finish = getLinkPathWorldPosition(path.points[index + 1].row, path.points[index + 1].column, y)
+    createdPieces += createLightningSegmentModels(handle, start, finish)
+  }
+  print(`[LlkLinkLightning] created model_pieces=${createdPieces} path_segments=${path.points.length - 1} duration=${LLK_LINK_SFX_DURATION}`)
+}
+
+function createLightningSegmentModels(handle: LinkVisualHandle, start: Vector3, finish: Vector3): number {
+  const dx = finish.x - start.x
+  const dz = finish.z - start.z
+  const length = math.max(math.abs(dx), math.abs(dz))
+  const rawSegmentCount = math.max(1, math.floor(length / LLK_LINK_LIGHTNING_STEP))
+  const segmentCount = math.min(rawSegmentCount, LLK_LINK_LIGHTNING_MAX_STEPS_PER_SEGMENT)
+  const points: Vector3[] = []
+
+  for (let index = 0; index <= segmentCount; index += 1) {
+    const t = index / segmentCount
+    let x = start.x + dx * t
+    let z = start.z + dz * t
+    if (index > 0 && index < segmentCount) {
+      const offset = (index % 2 === 0 ? 1 : -1) * LLK_LINK_LIGHTNING_JITTER
+      if (math.abs(dx) >= math.abs(dz)) {
+        z += offset
+      } else {
+        x += offset
+      }
+    }
+    points.push(math.Vector3(asFixed(x), asFixed(start.y), asFixed(z)))
+  }
+
+  let createdPieces = 0
+  for (let index = 0; index < points.length - 1; index += 1) {
+    createdPieces += createAxisAlignedLightningLeg(handle, points[index], points[index + 1])
+  }
+  return createdPieces
+}
+
+function createAxisAlignedLightningLeg(handle: LinkVisualHandle, start: Vector3, finish: Vector3): number {
+  let createdPieces = 0
+  const corner = math.Vector3(asFixed(finish.x), asFixed(start.y), asFixed(start.z))
+  createdPieces += createLightningBarPair(handle, start, corner)
+  createdPieces += createLightningBarPair(handle, corner, finish)
+  return createdPieces
+}
+
+function createLightningBarPair(handle: LinkVisualHandle, start: Vector3, finish: Vector3): number {
+  const dx = finish.x - start.x
+  const dz = finish.z - start.z
+  const length = math.max(math.abs(dx), math.abs(dz))
+  if (length <= 0.01) {
+    return 0
+  }
+
+  const centerX = (start.x + finish.x) * 0.5
+  const centerZ = (start.z + finish.z) * 0.5
+  const scaleX = math.abs(dx) >= math.abs(dz) ? length + LLK_LINK_LIGHTNING_CORE_THICKNESS : LLK_LINK_LIGHTNING_OUTER_THICKNESS
+  const scaleZ = math.abs(dx) >= math.abs(dz) ? LLK_LINK_LIGHTNING_OUTER_THICKNESS : length + LLK_LINK_LIGHTNING_CORE_THICKNESS
+  const coreScaleX = math.abs(dx) >= math.abs(dz) ? length + LLK_LINK_LIGHTNING_CORE_THICKNESS : LLK_LINK_LIGHTNING_CORE_THICKNESS
+  const coreScaleZ = math.abs(dx) >= math.abs(dz) ? LLK_LINK_LIGHTNING_CORE_THICKNESS : length + LLK_LINK_LIGHTNING_CORE_THICKNESS
+
+  let createdPieces = 0
+  const outer = createLightningBar(centerX, start.y, centerZ, scaleX, scaleZ, LLK_LINK_FALLBACK_LINE_COLOR)
+  if (outer !== null && outer !== undefined) {
+    handle.effectUnits.push(outer)
+    handle.effectOuterUnits.push(outer)
+    createdPieces += 1
+  }
+  const core = createLightningBar(centerX, start.y + LLK_LINK_LIGHTNING_CORE_OFFSET_Y, centerZ, coreScaleX, coreScaleZ, LLK_LINK_LIGHTNING_CORE_COLOR)
+  if (core !== null && core !== undefined) {
+    handle.effectUnits.push(core)
+    handle.effectCoreUnits.push(core)
+    createdPieces += 1
+  }
+  return createdPieces
+}
+
+function createLightningBar(centerX: number, centerY: number, centerZ: number, scaleX: number, scaleZ: number, colorText: string): any {
+  const unit = safeCreateObstacle(
+    LLK_LINK_LIGHTNING_UNIT_ID,
+    math.Vector3(asFixed(centerX), asFixed(centerY), asFixed(centerZ)),
+    math.Vector3(asFixed(scaleX), asFixed(LLK_LINK_LIGHTNING_HEIGHT), asFixed(scaleZ)),
+    { tag: "llk_create_link_lightning_bar", logger: print },
+  )
+  if (unit !== null && unit !== undefined) {
+    setGridTileBlockPaintColor(unit, colorText)
+  }
+  return unit
+}
+
+function createLightningNode(handle: LinkVisualHandle, position: Vector3): number {
+  const outer = createLightningNodeUnit(position.x, position.y, position.z, LLK_LINK_LIGHTNING_NODE_SIZE, LLK_LINK_FALLBACK_LINE_COLOR)
+  let createdPieces = 0
+  if (outer !== null && outer !== undefined) {
+    handle.effectUnits.push(outer)
+    handle.effectOuterUnits.push(outer)
+    handle.effectNodeUnits.push(outer)
+    createdPieces += 1
+  }
+
+  const core = createLightningNodeUnit(position.x, position.y + LLK_LINK_LIGHTNING_CORE_OFFSET_Y, position.z, LLK_LINK_LIGHTNING_NODE_SIZE * 0.45, LLK_LINK_LIGHTNING_CORE_COLOR)
+  if (core !== null && core !== undefined) {
+    handle.effectUnits.push(core)
+    handle.effectCoreUnits.push(core)
+    handle.effectNodeUnits.push(core)
+    createdPieces += 1
+  }
+  return createdPieces
+}
+
+function createLightningNodeUnit(centerX: number, centerY: number, centerZ: number, size: number, colorText: string): any {
+  const unit = safeCreateObstacle(
+    LLK_LINK_LIGHTNING_UNIT_ID,
+    math.Vector3(asFixed(centerX), asFixed(centerY), asFixed(centerZ)),
+    math.Vector3(asFixed(size), asFixed(LLK_LINK_LIGHTNING_NODE_HEIGHT), asFixed(size)),
+    { tag: "llk_create_link_lightning_node", logger: print },
+  )
+  if (unit !== null && unit !== undefined) {
+    setGridTileBlockPaintColor(unit, colorText)
+  }
+  return unit
+}
+
+function pulseLinkPathLightning(handle: LinkVisualHandle, elapsedFrames: number): void {
+  if (elapsedFrames >= LLK_MATCH_CLEAR_DELAY_FRAMES || handle.effectUnits.length === 0) {
+    return
+  }
+
+  const evenPulse = math.floor(elapsedFrames / LLK_LINK_LIGHTNING_PULSE_FRAMES) % 2 === 0
+  const outerColor = evenPulse ? LLK_LINK_FALLBACK_LINE_COLOR : "009DFF"
+  const coreColor = evenPulse ? LLK_LINK_LIGHTNING_CORE_COLOR : "BFFFFF"
+  paintUnits(handle.effectOuterUnits, outerColor)
+  paintUnits(handle.effectCoreUnits, coreColor)
+
+  ;(LuaAPI as any).call_delay_frame(LLK_LINK_LIGHTNING_PULSE_FRAMES, () => {
+    pulseLinkPathLightning(handle, elapsedFrames + LLK_LINK_LIGHTNING_PULSE_FRAMES)
+  })
+}
+
+function paintUnits(units: any[], colorText: string): void {
+  for (let index = 0; index < units.length; index += 1) {
+    const unit = units[index]
+    if (unit !== null && unit !== undefined) {
+      setGridTileBlockPaintColor(unit, colorText)
+    }
+  }
+}
+
+export function destroyLinkPathVisual(handle: LinkVisualHandle): void {
+  for (let index = 0; index < handle.sfxIds.length; index += 1) {
+    const sfxId = handle.sfxIds[index]
+    if (sfxId !== null && sfxId !== undefined && sfxId !== -1) {
+      safeCall(
+        () => {
+          ;(GlobalAPI as any).destroy_sfx(sfxId, false)
+          return true
+        },
+        { tag: "llk_destroy_link_sfx", fallback: false, logger: print },
+      )
+    }
+  }
+
+  for (let index = 0; index < handle.effectUnits.length; index += 1) {
+    const unit = handle.effectUnits[index]
+    if (unit !== null && unit !== undefined) {
+      safeDestroyUnit(unit, { tag: "llk_destroy_link_lightning_bar", logger: print })
+    }
+  }
+
+  for (let index = 0; index < handle.anchorUnits.length; index += 1) {
+    const anchor = handle.anchorUnits[index]
+    if (anchor !== null && anchor !== undefined) {
+      safeDestroyUnit(anchor, { tag: "llk_destroy_link_anchor", logger: print })
+    }
+  }
+  handle.sfxIds = []
+  handle.effectUnits = []
+  handle.effectOuterUnits = []
+  handle.effectCoreUnits = []
+  handle.effectNodeUnits = []
+  handle.anchorUnits = []
+}
+
+function createLinkAnchor(position: Vector3): any {
+  const anchor = safeCreateObstacle(
+    LLK_LINK_ANCHOR_UNIT_ID,
+    position,
+    math.Vector3(asFixed(LLK_LINK_ANCHOR_SCALE), asFixed(LLK_LINK_ANCHOR_SCALE), asFixed(LLK_LINK_ANCHOR_SCALE)),
+    { tag: "llk_create_link_anchor", logger: print },
+  )
+  if (anchor !== null && anchor !== undefined) {
+    safeCall(
+      () => {
+        anchor.set_model_visible(false)
+        return true
+      },
+      { tag: "llk_hide_link_anchor", fallback: false, logger: print },
+    )
+  }
+  return anchor
+}
+
+function pulseClickProxySelectionVisual(cell: LlkGridCell, token: number, frame: number): void {
+  if (cell.selectionVisualToken !== token || cell.clickProxyUnit === null || cell.clickProxyUnit === undefined || cell.matched) {
+    return
+  }
+
+  const color = frame % 2 === 0 ? GRID_TILE_CLICK_PROXY_EFFECT_COLOR : GRID_TILE_CLICK_PROXY_EFFECT_ALT_COLOR
+  setGridTileBlockPaintColor(cell.clickProxyUnit, color)
+  ;(LuaAPI as any).call_delay_frame(GRID_TILE_CLICK_PROXY_EFFECT_PULSE_FRAMES, () => {
+    pulseClickProxySelectionVisual(cell, token, frame + 1)
+  })
+}
+
+function refreshClickProxyEffectModel(cell: LlkGridCell): void {
+  const unit = cell.clickProxyUnit
+  if (unit === null || unit === undefined) {
+    return
+  }
+
+  setGridTileBlockPaintColor(unit, GRID_TILE_CLICK_PROXY_EFFECT_COLOR)
+  safeCall(
+    () => {
+      unit.set_model_visible(true)
+      return true
+    },
+    { tag: "llk_show_click_proxy_effect_model", fallback: false, logger: print },
+  )
+}
+
+function createSelectionEffectVisual(cell: LlkGridCell): void {
+  destroySelectionEffectVisual(cell)
+  const token = cell.selectionVisualToken
+  const position = getSelectionEffectEdgePosition(cell, 0)
+  const created = safeCreateDecoration(
+    GRID_TILE_SELECTION_EFFECT_DECORATION_ID,
+    position,
+    math.Quaternion(asFixed(0), asFixed(0), asFixed(0)),
+    math.Vector3(
+      asFixed(GRID_TILE_SELECTION_EFFECT_SCALE_X),
+      asFixed(GRID_TILE_SELECTION_EFFECT_SCALE_Y),
+      asFixed(GRID_TILE_SELECTION_EFFECT_SCALE_Z),
+    ),
+    undefined,
+    { tag: "llk_create_selection_effect_decoration", logger: print },
+  )
+  if (created === null || created === undefined) {
+    print(`[LlkSelectEffect] failed row=${cell.row} column=${cell.column} id=${GRID_TILE_SELECTION_EFFECT_DECORATION_ID}`)
+    return
+  }
+
+  cell.selectionEffectUnit = created
+  animateSelectionEffectAroundEdge(cell, token, 1)
+  print(`[LlkSelectEffect] created row=${cell.row} column=${cell.column} id=${GRID_TILE_SELECTION_EFFECT_DECORATION_ID} mode=edge_loop pos=(${position.x},${position.y},${position.z}) scale=(${GRID_TILE_SELECTION_EFFECT_SCALE_X},${GRID_TILE_SELECTION_EFFECT_SCALE_Y},${GRID_TILE_SELECTION_EFFECT_SCALE_Z}) half=${GRID_TILE_SELECTION_EFFECT_EDGE_HALF_SIZE} steps=${GRID_TILE_SELECTION_EFFECT_EDGE_STEPS}`)
+}
+
+function destroySelectionEffectVisual(cell: LlkGridCell): void {
+  if (cell.selectionEffectUnit !== null && cell.selectionEffectUnit !== undefined) {
+    safeDestroyUnit(cell.selectionEffectUnit, { tag: "llk_destroy_selection_effect_decoration", logger: print })
+    cell.selectionEffectUnit = null
+  }
+}
+
+function animateSelectionEffectAroundEdge(cell: LlkGridCell, token: number, step: number): void {
+  if (cell.selectionVisualToken !== token || cell.selectionEffectUnit === null || cell.selectionEffectUnit === undefined || cell.matched) {
+    return
+  }
+
+  const position = getSelectionEffectEdgePosition(cell, step)
+  safeCall(
+    () => {
+      cell.selectionEffectUnit.set_position(position)
+      return true
+    },
+    { tag: "llk_move_selection_effect_edge_loop", fallback: false, logger: print },
+  )
+  ;(LuaAPI as any).call_delay_frame(GRID_TILE_SELECTION_EFFECT_EDGE_STEP_FRAMES, () => {
+    animateSelectionEffectAroundEdge(cell, token, step + 1)
+  })
+}
+
+function getSelectionEffectEdgePosition(cell: LlkGridCell, step: number): Vector3 {
+  const center = getTileSurfacePosition(cell)
+  const totalSteps = math.max(4, GRID_TILE_SELECTION_EFFECT_EDGE_STEPS)
+  const normalized = step % totalSteps
+  const sideStepCount = totalSteps / 4
+  const side = math.floor(normalized / sideStepCount)
+  const sideT = (normalized - side * sideStepCount) / sideStepCount
+  const half = GRID_TILE_SELECTION_EFFECT_EDGE_HALF_SIZE
+  let x = center.x - half
+  let z = center.z - half
+
+  if (side === 0) {
+    x = center.x - half + half * 2 * sideT
+    z = center.z - half
+  } else if (side === 1) {
+    x = center.x + half
+    z = center.z - half + half * 2 * sideT
+  } else if (side === 2) {
+    x = center.x + half - half * 2 * sideT
+    z = center.z + half
+  } else {
+    x = center.x - half
+    z = center.z + half - half * 2 * sideT
+  }
+
+  return math.Vector3(
+    asFixed(x),
+    asFixed(center.y + GRID_TILE_SELECTION_EFFECT_OFFSET_Y),
+    asFixed(z),
+  )
+}
+
+function createSelectionRangeVisual(cell: LlkGridCell): void {
+  destroySelectionRangeVisual(cell)
+  const center = getSelectionRangeCenter(cell)
+  if (center === null) {
+    print(`[LlkSelectRange] skipped row=${cell.row} column=${cell.column} reason=no_click_proxy_position`)
+    return
+  }
+
+  const halfSize = GRID_TILE_CLICK_PROXY_SCALE_X * 0.5
+  const halfThickness = GRID_TILE_SELECTION_RANGE_EDGE_THICKNESS * 0.5
+  const y = center.y + GRID_TILE_SELECTION_RANGE_OFFSET_Y
+  const edgeSpecs = [
+    { x: center.x, z: center.z - halfSize + halfThickness, scaleX: GRID_TILE_CLICK_PROXY_SCALE_X, scaleZ: GRID_TILE_SELECTION_RANGE_EDGE_THICKNESS },
+    { x: center.x, z: center.z + halfSize - halfThickness, scaleX: GRID_TILE_CLICK_PROXY_SCALE_X, scaleZ: GRID_TILE_SELECTION_RANGE_EDGE_THICKNESS },
+    { x: center.x - halfSize + halfThickness, z: center.z, scaleX: GRID_TILE_SELECTION_RANGE_EDGE_THICKNESS, scaleZ: GRID_TILE_CLICK_PROXY_SCALE_Z },
+    { x: center.x + halfSize - halfThickness, z: center.z, scaleX: GRID_TILE_SELECTION_RANGE_EDGE_THICKNESS, scaleZ: GRID_TILE_CLICK_PROXY_SCALE_Z },
+  ]
+
+  for (let index = 0; index < edgeSpecs.length; index += 1) {
+    const spec = edgeSpecs[index]
+    const edge = safeCreateObstacle(
+      GRID_TILE_SELECTION_RANGE_UNIT_ID,
+      math.Vector3(asFixed(spec.x), asFixed(y), asFixed(spec.z)),
+      math.Vector3(asFixed(spec.scaleX), asFixed(GRID_TILE_SELECTION_RANGE_HEIGHT), asFixed(spec.scaleZ)),
+      { tag: "llk_create_selection_range_edge", logger: print },
+    )
+    if (edge !== null && edge !== undefined) {
+      setGridTileBlockPaintColor(edge, GRID_TILE_CLICK_PROXY_EFFECT_COLOR)
+      cell.selectionRangeUnits.push(edge)
+    }
+  }
+
+  print(`[LlkSelectRange] created row=${cell.row} column=${cell.column} edges=${cell.selectionRangeUnits.length} size=${GRID_TILE_CLICK_PROXY_SCALE_X}x${GRID_TILE_CLICK_PROXY_SCALE_Z}`)
+}
+
+function destroySelectionRangeVisual(cell: LlkGridCell): void {
+  for (let index = 0; index < cell.selectionRangeUnits.length; index += 1) {
+    const unit = cell.selectionRangeUnits[index]
+    if (unit !== null && unit !== undefined) {
+      safeDestroyUnit(unit, { tag: "llk_destroy_selection_range_edge", logger: print })
+    }
+  }
+  cell.selectionRangeUnits = []
+}
+
+function pulseSelectionRangeVisual(cell: LlkGridCell, token: number, frame: number): void {
+  if (cell.selectionVisualToken !== token || cell.selectionRangeUnits.length === 0 || cell.matched) {
+    return
+  }
+
+  const color = frame % 2 === 0 ? GRID_TILE_CLICK_PROXY_EFFECT_COLOR : GRID_TILE_CLICK_PROXY_EFFECT_ALT_COLOR
+  for (let index = 0; index < cell.selectionRangeUnits.length; index += 1) {
+    const unit = cell.selectionRangeUnits[index]
+    if (unit !== null && unit !== undefined) {
+      setGridTileBlockPaintColor(unit, color)
+    }
+  }
+  ;(LuaAPI as any).call_delay_frame(GRID_TILE_CLICK_PROXY_EFFECT_PULSE_FRAMES, () => {
+    pulseSelectionRangeVisual(cell, token, frame + 1)
+  })
+}
+
+function getSelectionRangeCenter(cell: LlkGridCell): Vector3 | null {
+  if (cell.clickProxyUnit === null || cell.clickProxyUnit === undefined) {
+    return null
+  }
+
+  const position = safeCall(
+    () => {
+      return cell.clickProxyUnit.get_position()
+    },
+    { tag: "llk_get_selection_range_center", fallback: null, logger: print },
+  )
+  return position !== null && position !== undefined ? position : null
+}
+
+function getLinkLineY(cell: LlkGridCell): number {
+  const center = getSelectionRangeCenter(cell)
+  if (center !== null) {
+    return center.y + LLK_LINK_SFX_OFFSET_Y
+  }
+  return GRID_TILE_BLOCK_Y + GRID_TILE_BLOCK_SCALE_Y * 0.5 + LLK_LINK_SFX_OFFSET_Y
+}
+
+function getLinkPathWorldPosition(row: number, column: number, y: number): Vector3 {
+  const bounds = getGridBounds()
+  return math.Vector3(
+    asFixed(bounds.xMin + GRID_CELL_SIZE * (column - 0.5)),
+    asFixed(y),
+    asFixed(bounds.zMin + GRID_CELL_SIZE * (row - 0.5)),
+  )
 }
 
 function createGridTileSurfaceStickers(cells: LlkGridCell[], onClick: GridCellClickHandler): void {
@@ -409,6 +1004,14 @@ function refreshGridTileButtonVisibility(cells: LlkGridCell[], attempt: number):
 }
 
 export function getTileHeightLevels(cell: LlkGridCell): TileHeightLevels {
+  if (GRID_TILE_BLOCK_USE_DECORATION) {
+    return {
+      bottomY: GRID_TILE_BLOCK_Y - GRID_TILE_BLOCK_SCALE_Y * 0.5,
+      middleY: GRID_TILE_BLOCK_Y,
+      topY: GRID_TILE_BLOCK_Y + GRID_TILE_BLOCK_SCALE_Y * 0.5,
+    }
+  }
+
   const position = safeCall(
     () => {
       return cell.tileUnit.get_position()
@@ -614,6 +1217,9 @@ function auditGridTileBindings(cells: LlkGridCell[], requireButton: boolean): vo
 }
 
 export function destroyCellVisuals(cell: LlkGridCell): void {
+  cell.selectionVisualToken += 1
+  destroySelectionEffectVisual(cell)
+  destroySelectionRangeVisual(cell)
   if (cell.clickProxyUnit !== null && cell.clickProxyUnit !== undefined) {
     safeDestroyUnit(cell.clickProxyUnit, { tag: "llk_destroy_matched_click_proxy", logger: print })
     cell.clickProxyUnit = null

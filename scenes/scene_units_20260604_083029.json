@@ -1,0 +1,2177 @@
+{
+  "errors": [],
+  "exported_at_unix": 1780561804,
+  "ids": [
+    1,
+    1681499584,
+    1401993508,
+    1931411198,
+    1560034808,
+    1697267258,
+    2092610088,
+    1187990562,
+    1191726370,
+    1636704005,
+    2079936283,
+    1610283476,
+    1180549599,
+    1513141284,
+    1269637541,
+    1168089588,
+    2070825575,
+    1542589179,
+    1898644521,
+    1845194833,
+    1069632905,
+    1448966074,
+    1623184998,
+    1049039086,
+    1053304095,
+    1865507498,
+    1897548731,
+    1590053794,
+    1631210774,
+    1972915761,
+    1163059957,
+    1225047043,
+    1001,
+    1003,
+    1002,
+    1946885843
+  ],
+  "schema": "egg_editor_scene_units.v2",
+  "selected_unit_ids": [
+    1946885843
+  ],
+  "source": {
+    "data_api": "EditorAPI.get_scene_unit_data",
+    "ids_api": "EditorAPI.get_all_unit_ids"
+  },
+  "unit_count": 36,
+  "unit_tree": [
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 0,
+        "unit_id": 1,
+        "unit_type": 128
+      },
+      "id": 1
+    },
+    {
+      "children": [],
+      "data": {
+        "create_probability": 1.0,
+        "emissive_intensity_1": 0.5,
+        "fix_destroy_time": -1,
+        "material_metalness_1": 0.0,
+        "material_roughness_1": 1.0,
+        "model_angle": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "model_id": 90004,
+        "name": "地砖0",
+        "parent_unit_id": 0,
+        "physic_enable": false,
+        "position": [
+          -23.252,
+          0.0,
+          0.25
+        ],
+        "prefab_id": 1201010,
+        "scale": [
+          3.166631328418,
+          1.0,
+          2.3500001430511
+        ],
+        "unit_eid": 1201010,
+        "unit_id": 1681499584,
+        "unit_type": 256,
+        "unit_uid": "floor_3",
+        "world_position": [
+          -23.252,
+          0.0,
+          0.25
+        ]
+      },
+      "id": 1681499584
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          -0.0,
+          -90.0,
+          0.0
+        ],
+        "model_id": 90007,
+        "name": "分阵营出生点1",
+        "parent_unit_id": 0,
+        "position": [
+          -21.0,
+          2.0,
+          0.5
+        ],
+        "prefab_id": 600005,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 600005,
+        "unit_id": 1401993508,
+        "unit_type": 16384,
+        "unit_uid": "600005_uid",
+        "world_position": [
+          -21.0,
+          2.0,
+          0.5
+        ]
+      },
+      "id": 1401993508
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "model_id": 90002,
+        "name": "相机路径0",
+        "parent_unit_id": 0,
+        "position": [
+          99999.0,
+          99999.0,
+          99999.0
+        ],
+        "prefab_id": 3201063,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 3201063,
+        "unit_id": 1931411198,
+        "unit_type": 2048,
+        "unit_uid": "3201063_uid",
+        "world_position": [
+          99999.0,
+          99999.0,
+          99999.0
+        ]
+      },
+      "id": 1931411198
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁4",
+        "parent_unit_id": 0,
+        "position": [
+          28.133634567261,
+          0.0,
+          41.822219848633
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1560034808,
+        "unit_type": 1048576,
+        "world_position": [
+          28.133634567261,
+          0.0,
+          41.822219848633
+        ]
+      },
+      "id": 1560034808
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁0",
+        "parent_unit_id": 0,
+        "position": [
+          866.79437255859,
+          0.0,
+          807.69848632812
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1697267258,
+        "unit_type": 1048576,
+        "world_position": [
+          866.79437255859,
+          0.0,
+          807.69848632812
+        ]
+      },
+      "id": 1697267258
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁1",
+        "parent_unit_id": 0,
+        "position": [
+          11.617267608643,
+          0.0,
+          123.38805389404
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 2092610088,
+        "unit_type": 1048576,
+        "world_position": [
+          11.617267608643,
+          0.0,
+          123.38805389404
+        ]
+      },
+      "id": 2092610088
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁2",
+        "parent_unit_id": 0,
+        "position": [
+          11.617267608643,
+          0.0,
+          123.65338897705
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1187990562,
+        "unit_type": 1048576,
+        "world_position": [
+          11.617267608643,
+          0.0,
+          123.65338897705
+        ]
+      },
+      "id": 1187990562
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁3",
+        "parent_unit_id": 0,
+        "position": [
+          28.133636474609,
+          0.0,
+          30.911964416504
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1191726370,
+        "unit_type": 1048576,
+        "world_position": [
+          28.133636474609,
+          0.0,
+          30.911964416504
+        ]
+      },
+      "id": 1191726370
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁5",
+        "parent_unit_id": 0,
+        "position": [
+          -29.552509307861,
+          0.0,
+          60.647102355957
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1636704005,
+        "unit_type": 1048576,
+        "world_position": [
+          -29.552509307861,
+          0.0,
+          60.647102355957
+        ]
+      },
+      "id": 1636704005
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁6",
+        "parent_unit_id": 0,
+        "position": [
+          -269.31259155273,
+          0.0,
+          -64.999877929688
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 2079936283,
+        "unit_type": 1048576,
+        "world_position": [
+          -269.31259155273,
+          0.0,
+          -64.999877929688
+        ]
+      },
+      "id": 2079936283
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁7",
+        "parent_unit_id": 0,
+        "position": [
+          -211.7087097168,
+          0.0,
+          -9.723258972168
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1610283476,
+        "unit_type": 1048576,
+        "world_position": [
+          -211.7087097168,
+          0.0,
+          -9.723258972168
+        ]
+      },
+      "id": 1610283476
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁8",
+        "parent_unit_id": 0,
+        "position": [
+          -211.7087097168,
+          0.0,
+          21.353328704834
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1180549599,
+        "unit_type": 1048576,
+        "world_position": [
+          -211.7087097168,
+          0.0,
+          21.353328704834
+        ]
+      },
+      "id": 1180549599
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁9",
+        "parent_unit_id": 0,
+        "position": [
+          -216.58369445801,
+          0.0,
+          77.011833190918
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1513141284,
+        "unit_type": 1048576,
+        "world_position": [
+          -216.58369445801,
+          0.0,
+          77.011833190918
+        ]
+      },
+      "id": 1513141284
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁10",
+        "parent_unit_id": 0,
+        "position": [
+          -216.58366394043,
+          0.0,
+          -49.417266845703
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1269637541,
+        "unit_type": 1048576,
+        "world_position": [
+          -216.58366394043,
+          0.0,
+          -49.417266845703
+        ]
+      },
+      "id": 1269637541
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁11",
+        "parent_unit_id": 0,
+        "position": [
+          -256.00421142578,
+          0.0,
+          -135.9923248291
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1168089588,
+        "unit_type": 1048576,
+        "world_position": [
+          -256.00421142578,
+          0.0,
+          -135.9923248291
+        ]
+      },
+      "id": 1168089588
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁12",
+        "parent_unit_id": 0,
+        "position": [
+          -1791.5169677734,
+          0.0,
+          1284.7783203125
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 2070825575,
+        "unit_type": 1048576,
+        "world_position": [
+          -1791.5169677734,
+          0.0,
+          1284.7783203125
+        ]
+      },
+      "id": 2070825575
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁13",
+        "parent_unit_id": 0,
+        "position": [
+          17.2649269104,
+          0.0,
+          126.32887268066
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1542589179,
+        "unit_type": 1048576,
+        "world_position": [
+          17.2649269104,
+          0.0,
+          126.32887268066
+        ]
+      },
+      "id": 1542589179
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁14",
+        "parent_unit_id": 0,
+        "position": [
+          21.82279586792,
+          0.0,
+          121.05741882324
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1898644521,
+        "unit_type": 1048576,
+        "world_position": [
+          21.82279586792,
+          0.0,
+          121.05741882324
+        ]
+      },
+      "id": 1898644521
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁15",
+        "parent_unit_id": 0,
+        "position": [
+          -1549.0278320312,
+          0.0,
+          711.21362304688
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1845194833,
+        "unit_type": 1048576,
+        "world_position": [
+          -1549.0278320312,
+          0.0,
+          711.21362304688
+        ]
+      },
+      "id": 1845194833
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁16",
+        "parent_unit_id": 0,
+        "position": [
+          -1549.0278320312,
+          0.0,
+          711.21362304688
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1069632905,
+        "unit_type": 1048576,
+        "world_position": [
+          -1549.0278320312,
+          0.0,
+          711.21362304688
+        ]
+      },
+      "id": 1069632905
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁17",
+        "parent_unit_id": 0,
+        "position": [
+          32.518562316895,
+          0.0,
+          92.700958251953
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1448966074,
+        "unit_type": 1048576,
+        "world_position": [
+          32.518562316895,
+          0.0,
+          92.700958251953
+        ]
+      },
+      "id": 1448966074
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁18",
+        "parent_unit_id": 0,
+        "position": [
+          33.065361022949,
+          0.0,
+          89.14860534668
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1623184998,
+        "unit_type": 1048576,
+        "world_position": [
+          33.065361022949,
+          0.0,
+          89.14860534668
+        ]
+      },
+      "id": 1623184998
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁19",
+        "parent_unit_id": 0,
+        "position": [
+          -238.6830291748,
+          0.0,
+          272.85214233398
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1049039086,
+        "unit_type": 1048576,
+        "world_position": [
+          -238.6830291748,
+          0.0,
+          272.85214233398
+        ]
+      },
+      "id": 1049039086
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁20",
+        "parent_unit_id": 0,
+        "position": [
+          34.124561309814,
+          0.0,
+          104.96465301514
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1053304095,
+        "unit_type": 1048576,
+        "world_position": [
+          34.124561309814,
+          0.0,
+          104.96465301514
+        ]
+      },
+      "id": 1053304095
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁21",
+        "parent_unit_id": 0,
+        "position": [
+          1106.9514160156,
+          0.0,
+          460.60180664062
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1865507498,
+        "unit_type": 1048576,
+        "world_position": [
+          1106.9514160156,
+          0.0,
+          460.60180664062
+        ]
+      },
+      "id": 1865507498
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁22",
+        "parent_unit_id": 0,
+        "position": [
+          771.30853271484,
+          0.0,
+          296.45245361328
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1897548731,
+        "unit_type": 1048576,
+        "world_position": [
+          771.30853271484,
+          0.0,
+          296.45245361328
+        ]
+      },
+      "id": 1897548731
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁23",
+        "parent_unit_id": 0,
+        "position": [
+          2082.5363769531,
+          0.0,
+          -9.4792366027832
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1590053794,
+        "unit_type": 1048576,
+        "world_position": [
+          2082.5363769531,
+          0.0,
+          -9.4792366027832
+        ]
+      },
+      "id": 1590053794
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁24",
+        "parent_unit_id": 0,
+        "position": [
+          -1056.0654296875,
+          0.0,
+          -168.0364074707
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1631210774,
+        "unit_type": 1048576,
+        "world_position": [
+          -1056.0654296875,
+          0.0,
+          -168.0364074707
+        ]
+      },
+      "id": 1631210774
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁25",
+        "parent_unit_id": 0,
+        "position": [
+          3013.6162109375,
+          0.0,
+          2783.5505371094
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1972915761,
+        "unit_type": 1048576,
+        "world_position": [
+          3013.6162109375,
+          0.0,
+          2783.5505371094
+        ]
+      },
+      "id": 1972915761
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁26",
+        "parent_unit_id": 0,
+        "position": [
+          -268.76800537109,
+          0.0,
+          -94.130630493164
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1163059957,
+        "unit_type": 1048576,
+        "world_position": [
+          -268.76800537109,
+          0.0,
+          -94.130630493164
+        ]
+      },
+      "id": 1163059957
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电流闪烁27",
+        "parent_unit_id": 0,
+        "position": [
+          -282.43594360352,
+          0.0,
+          -91.63410949707
+        ],
+        "prefab_id": 405913,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 405913,
+        "unit_id": 1225047043,
+        "unit_type": 1048576,
+        "world_position": [
+          -282.43594360352,
+          0.0,
+          -91.63410949707
+        ]
+      },
+      "id": 1225047043
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 0,
+        "unit_id": 1001,
+        "unit_type": 0
+      },
+      "id": 1001
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 0,
+        "unit_id": 1003,
+        "unit_type": 0
+      },
+      "id": 1003
+    },
+    {
+      "children": [],
+      "data": {
+        "model_id": 0,
+        "parent_unit_id": 0,
+        "prefab_id": 0,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 0,
+        "unit_id": 1002,
+        "unit_type": 0
+      },
+      "id": 1002
+    },
+    {
+      "children": [],
+      "data": {
+        "model_angle": [
+          0,
+          0,
+          0
+        ],
+        "model_id": 57450,
+        "name": "电路10",
+        "parent_unit_id": 0,
+        "position": [
+          -18.688144683838,
+          0.0,
+          -51.952674865723
+        ],
+        "prefab_id": 400696,
+        "scale": [
+          1,
+          1,
+          1
+        ],
+        "unit_eid": 400696,
+        "unit_id": 1946885843,
+        "unit_type": 1048576,
+        "world_position": [
+          -18.688144683838,
+          0.0,
+          -51.952674865723
+        ]
+      },
+      "id": 1946885843
+    }
+  ],
+  "units_by_id": {
+    "1": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 0,
+      "unit_id": 1,
+      "unit_type": 128
+    },
+    "1001": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 0,
+      "unit_id": 1001,
+      "unit_type": 0
+    },
+    "1002": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 0,
+      "unit_id": 1002,
+      "unit_type": 0
+    },
+    "1003": {
+      "model_id": 0,
+      "parent_unit_id": 0,
+      "prefab_id": 0,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 0,
+      "unit_id": 1003,
+      "unit_type": 0
+    },
+    "1049039086": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁19",
+      "parent_unit_id": 0,
+      "position": [
+        -238.6830291748,
+        0.0,
+        272.85214233398
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1049039086,
+      "unit_type": 1048576,
+      "world_position": [
+        -238.6830291748,
+        0.0,
+        272.85214233398
+      ]
+    },
+    "1053304095": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁20",
+      "parent_unit_id": 0,
+      "position": [
+        34.124561309814,
+        0.0,
+        104.96465301514
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1053304095,
+      "unit_type": 1048576,
+      "world_position": [
+        34.124561309814,
+        0.0,
+        104.96465301514
+      ]
+    },
+    "1069632905": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁16",
+      "parent_unit_id": 0,
+      "position": [
+        -1549.0278320312,
+        0.0,
+        711.21362304688
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1069632905,
+      "unit_type": 1048576,
+      "world_position": [
+        -1549.0278320312,
+        0.0,
+        711.21362304688
+      ]
+    },
+    "1163059957": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁26",
+      "parent_unit_id": 0,
+      "position": [
+        -268.76800537109,
+        0.0,
+        -94.130630493164
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1163059957,
+      "unit_type": 1048576,
+      "world_position": [
+        -268.76800537109,
+        0.0,
+        -94.130630493164
+      ]
+    },
+    "1168089588": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁11",
+      "parent_unit_id": 0,
+      "position": [
+        -256.00421142578,
+        0.0,
+        -135.9923248291
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1168089588,
+      "unit_type": 1048576,
+      "world_position": [
+        -256.00421142578,
+        0.0,
+        -135.9923248291
+      ]
+    },
+    "1180549599": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁8",
+      "parent_unit_id": 0,
+      "position": [
+        -211.7087097168,
+        0.0,
+        21.353328704834
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1180549599,
+      "unit_type": 1048576,
+      "world_position": [
+        -211.7087097168,
+        0.0,
+        21.353328704834
+      ]
+    },
+    "1187990562": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁2",
+      "parent_unit_id": 0,
+      "position": [
+        11.617267608643,
+        0.0,
+        123.65338897705
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1187990562,
+      "unit_type": 1048576,
+      "world_position": [
+        11.617267608643,
+        0.0,
+        123.65338897705
+      ]
+    },
+    "1191726370": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁3",
+      "parent_unit_id": 0,
+      "position": [
+        28.133636474609,
+        0.0,
+        30.911964416504
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1191726370,
+      "unit_type": 1048576,
+      "world_position": [
+        28.133636474609,
+        0.0,
+        30.911964416504
+      ]
+    },
+    "1225047043": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁27",
+      "parent_unit_id": 0,
+      "position": [
+        -282.43594360352,
+        0.0,
+        -91.63410949707
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1225047043,
+      "unit_type": 1048576,
+      "world_position": [
+        -282.43594360352,
+        0.0,
+        -91.63410949707
+      ]
+    },
+    "1269637541": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁10",
+      "parent_unit_id": 0,
+      "position": [
+        -216.58366394043,
+        0.0,
+        -49.417266845703
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1269637541,
+      "unit_type": 1048576,
+      "world_position": [
+        -216.58366394043,
+        0.0,
+        -49.417266845703
+      ]
+    },
+    "1401993508": {
+      "model_angle": [
+        -0.0,
+        -90.0,
+        0.0
+      ],
+      "model_id": 90007,
+      "name": "分阵营出生点1",
+      "parent_unit_id": 0,
+      "position": [
+        -21.0,
+        2.0,
+        0.5
+      ],
+      "prefab_id": 600005,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 600005,
+      "unit_id": 1401993508,
+      "unit_type": 16384,
+      "unit_uid": "600005_uid",
+      "world_position": [
+        -21.0,
+        2.0,
+        0.5
+      ]
+    },
+    "1448966074": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁17",
+      "parent_unit_id": 0,
+      "position": [
+        32.518562316895,
+        0.0,
+        92.700958251953
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1448966074,
+      "unit_type": 1048576,
+      "world_position": [
+        32.518562316895,
+        0.0,
+        92.700958251953
+      ]
+    },
+    "1513141284": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁9",
+      "parent_unit_id": 0,
+      "position": [
+        -216.58369445801,
+        0.0,
+        77.011833190918
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1513141284,
+      "unit_type": 1048576,
+      "world_position": [
+        -216.58369445801,
+        0.0,
+        77.011833190918
+      ]
+    },
+    "1542589179": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁13",
+      "parent_unit_id": 0,
+      "position": [
+        17.2649269104,
+        0.0,
+        126.32887268066
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1542589179,
+      "unit_type": 1048576,
+      "world_position": [
+        17.2649269104,
+        0.0,
+        126.32887268066
+      ]
+    },
+    "1560034808": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁4",
+      "parent_unit_id": 0,
+      "position": [
+        28.133634567261,
+        0.0,
+        41.822219848633
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1560034808,
+      "unit_type": 1048576,
+      "world_position": [
+        28.133634567261,
+        0.0,
+        41.822219848633
+      ]
+    },
+    "1590053794": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁23",
+      "parent_unit_id": 0,
+      "position": [
+        2082.5363769531,
+        0.0,
+        -9.4792366027832
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1590053794,
+      "unit_type": 1048576,
+      "world_position": [
+        2082.5363769531,
+        0.0,
+        -9.4792366027832
+      ]
+    },
+    "1610283476": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁7",
+      "parent_unit_id": 0,
+      "position": [
+        -211.7087097168,
+        0.0,
+        -9.723258972168
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1610283476,
+      "unit_type": 1048576,
+      "world_position": [
+        -211.7087097168,
+        0.0,
+        -9.723258972168
+      ]
+    },
+    "1623184998": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁18",
+      "parent_unit_id": 0,
+      "position": [
+        33.065361022949,
+        0.0,
+        89.14860534668
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1623184998,
+      "unit_type": 1048576,
+      "world_position": [
+        33.065361022949,
+        0.0,
+        89.14860534668
+      ]
+    },
+    "1631210774": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁24",
+      "parent_unit_id": 0,
+      "position": [
+        -1056.0654296875,
+        0.0,
+        -168.0364074707
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1631210774,
+      "unit_type": 1048576,
+      "world_position": [
+        -1056.0654296875,
+        0.0,
+        -168.0364074707
+      ]
+    },
+    "1636704005": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁5",
+      "parent_unit_id": 0,
+      "position": [
+        -29.552509307861,
+        0.0,
+        60.647102355957
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1636704005,
+      "unit_type": 1048576,
+      "world_position": [
+        -29.552509307861,
+        0.0,
+        60.647102355957
+      ]
+    },
+    "1681499584": {
+      "create_probability": 1.0,
+      "emissive_intensity_1": 0.5,
+      "fix_destroy_time": -1,
+      "material_metalness_1": 0.0,
+      "material_roughness_1": 1.0,
+      "model_angle": [
+        -0.0,
+        0.0,
+        0.0
+      ],
+      "model_id": 90004,
+      "name": "地砖0",
+      "parent_unit_id": 0,
+      "physic_enable": false,
+      "position": [
+        -23.252,
+        0.0,
+        0.25
+      ],
+      "prefab_id": 1201010,
+      "scale": [
+        3.166631328418,
+        1.0,
+        2.3500001430511
+      ],
+      "unit_eid": 1201010,
+      "unit_id": 1681499584,
+      "unit_type": 256,
+      "unit_uid": "floor_3",
+      "world_position": [
+        -23.252,
+        0.0,
+        0.25
+      ]
+    },
+    "1697267258": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁0",
+      "parent_unit_id": 0,
+      "position": [
+        866.79437255859,
+        0.0,
+        807.69848632812
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1697267258,
+      "unit_type": 1048576,
+      "world_position": [
+        866.79437255859,
+        0.0,
+        807.69848632812
+      ]
+    },
+    "1845194833": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁15",
+      "parent_unit_id": 0,
+      "position": [
+        -1549.0278320312,
+        0.0,
+        711.21362304688
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1845194833,
+      "unit_type": 1048576,
+      "world_position": [
+        -1549.0278320312,
+        0.0,
+        711.21362304688
+      ]
+    },
+    "1865507498": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁21",
+      "parent_unit_id": 0,
+      "position": [
+        1106.9514160156,
+        0.0,
+        460.60180664062
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1865507498,
+      "unit_type": 1048576,
+      "world_position": [
+        1106.9514160156,
+        0.0,
+        460.60180664062
+      ]
+    },
+    "1897548731": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁22",
+      "parent_unit_id": 0,
+      "position": [
+        771.30853271484,
+        0.0,
+        296.45245361328
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1897548731,
+      "unit_type": 1048576,
+      "world_position": [
+        771.30853271484,
+        0.0,
+        296.45245361328
+      ]
+    },
+    "1898644521": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁14",
+      "parent_unit_id": 0,
+      "position": [
+        21.82279586792,
+        0.0,
+        121.05741882324
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1898644521,
+      "unit_type": 1048576,
+      "world_position": [
+        21.82279586792,
+        0.0,
+        121.05741882324
+      ]
+    },
+    "1931411198": {
+      "model_angle": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "model_id": 90002,
+      "name": "相机路径0",
+      "parent_unit_id": 0,
+      "position": [
+        99999.0,
+        99999.0,
+        99999.0
+      ],
+      "prefab_id": 3201063,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 3201063,
+      "unit_id": 1931411198,
+      "unit_type": 2048,
+      "unit_uid": "3201063_uid",
+      "world_position": [
+        99999.0,
+        99999.0,
+        99999.0
+      ]
+    },
+    "1946885843": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电路10",
+      "parent_unit_id": 0,
+      "position": [
+        -18.688144683838,
+        0.0,
+        -51.952674865723
+      ],
+      "prefab_id": 400696,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 400696,
+      "unit_id": 1946885843,
+      "unit_type": 1048576,
+      "world_position": [
+        -18.688144683838,
+        0.0,
+        -51.952674865723
+      ]
+    },
+    "1972915761": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁25",
+      "parent_unit_id": 0,
+      "position": [
+        3013.6162109375,
+        0.0,
+        2783.5505371094
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 1972915761,
+      "unit_type": 1048576,
+      "world_position": [
+        3013.6162109375,
+        0.0,
+        2783.5505371094
+      ]
+    },
+    "2070825575": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁12",
+      "parent_unit_id": 0,
+      "position": [
+        -1791.5169677734,
+        0.0,
+        1284.7783203125
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 2070825575,
+      "unit_type": 1048576,
+      "world_position": [
+        -1791.5169677734,
+        0.0,
+        1284.7783203125
+      ]
+    },
+    "2079936283": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁6",
+      "parent_unit_id": 0,
+      "position": [
+        -269.31259155273,
+        0.0,
+        -64.999877929688
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 2079936283,
+      "unit_type": 1048576,
+      "world_position": [
+        -269.31259155273,
+        0.0,
+        -64.999877929688
+      ]
+    },
+    "2092610088": {
+      "model_angle": [
+        0,
+        0,
+        0
+      ],
+      "model_id": 57450,
+      "name": "电流闪烁1",
+      "parent_unit_id": 0,
+      "position": [
+        11.617267608643,
+        0.0,
+        123.38805389404
+      ],
+      "prefab_id": 405913,
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "unit_eid": 405913,
+      "unit_id": 2092610088,
+      "unit_type": 1048576,
+      "world_position": [
+        11.617267608643,
+        0.0,
+        123.38805389404
+      ]
+    }
+  }
+}
