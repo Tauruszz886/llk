@@ -2,7 +2,7 @@ import { EMPTY_GRID_VALUE, GRID_COLUMNS, GRID_ROWS, LLK_MAX_TURNS, PATH_DIRECTIO
 import { isPlayableCell, isSameGridCell } from "./grid"
 import type { LinkPathPoint, LinkPathResult, LlkGridCell, PathSearchState } from "./types"
 
-export function canLinkCells(grid: LlkGridCell[][], first: LlkGridCell, second: LlkGridCell): LinkPathResult | null {
+export function canLinkCells(grid: LlkGridCell[][], first: LlkGridCell, second: LlkGridCell, logResult = true): LinkPathResult | null {
   if (isSameGridCell(first, second) || !isPlayableCell(first) || !isPlayableCell(second) || first.value !== second.value) {
     return null
   }
@@ -34,7 +34,9 @@ export function canLinkCells(grid: LlkGridCell[][], first: LlkGridCell, second: 
 
       const nextState: PathSearchState = { row: nextRow, column: nextColumn, direction, turns: nextTurns, previousIndex: currentIndex }
       if (nextRow === targetRow && nextColumn === targetColumn) {
-        print(`[LlkPath] linked from=(${first.row},${first.column}) to=(${second.row},${second.column}) value=${first.value} turns=${nextTurns}`)
+        if (logResult) {
+          print(`[LlkPath] linked from=(${first.row},${first.column}) to=(${second.row},${second.column}) value=${first.value} turns=${nextTurns}`)
+        }
         return {
           points: simplifyPathPoints(rebuildPathPoints(queue, nextState)),
           turns: nextTurns,
@@ -52,7 +54,9 @@ export function canLinkCells(grid: LlkGridCell[][], first: LlkGridCell, second: 
     }
   }
 
-  print(`[LlkPath] blocked from=(${first.row},${first.column}) to=(${second.row},${second.column}) value=${first.value}`)
+  if (logResult) {
+    print(`[LlkPath] blocked from=(${first.row},${first.column}) to=(${second.row},${second.column}) value=${first.value}`)
+  }
   return null
 }
 

@@ -1,4 +1,5 @@
 import { safeCall } from "@common/engine_safe"
+import { LLK_RUNTIME_CAMERA_HEIGHT_FALLBACK, LLK_RUNTIME_CAMERA_HEIGHT_RAISE } from "./config"
 import { asFixed } from "./utils"
 
 type FrozenRoleState = {
@@ -9,9 +10,11 @@ type FrozenRoleState = {
 
 const ROLE_FREEZE_ENFORCE_INTERVAL_FRAMES = 5
 const ZERO_VECTOR = math.Vector3(asFixed(0), asFixed(0), asFixed(0))
+const CAMERA_PROPERTY_OBSERVER_HEIGHT = 11
 
 let frozenRoleStates: FrozenRoleState[] = []
 let roleFreezeLoopStarted = false
+let cameraHeightRaised = false
 
 export function disableJoystickControl(role: any): void {
   safeCall(
@@ -61,6 +64,39 @@ export function startRuntimeRoleFreeze(): void {
   enforceRuntimeRoleFreeze()
 }
 
+export function raiseRuntimeCameraHeightOnce(): number {
+  if (cameraHeightRaised) {
+    return 0
+  }
+  cameraHeightRaised = true
+
+  const roles = GameAPI.get_all_roles()
+  let changed = 0
+  for (let index = 0; index < roles.length; index += 1) {
+    const role = roles[index] as any
+    const currentHeight = safeCall(
+      () => {
+        return role.get_camera_property(CAMERA_PROPERTY_OBSERVER_HEIGHT)
+      },
+      { tag: "llk_get_camera_observer_height", fallback: null, logger: print },
+    )
+    const numericHeight = typeof currentHeight === "number" ? currentHeight : null
+    const nextHeight = numericHeight !== null ? numericHeight + LLK_RUNTIME_CAMERA_HEIGHT_RAISE : LLK_RUNTIME_CAMERA_HEIGHT_FALLBACK
+    const ok = safeCall(
+      () => {
+        role.set_camera_property(CAMERA_PROPERTY_OBSERVER_HEIGHT, asFixed(nextHeight))
+        return true
+      },
+      { tag: "llk_raise_camera_observer_height", fallback: false, logger: print },
+    ) === true
+    if (ok) {
+      changed += 1
+      print(`[RuntimeCamera] observer_height role_index=${index} from=${numericHeight !== null ? numericHeight : "unknown"} to=${nextHeight}`)
+    }
+  }
+  return changed
+}
+
 function enforceRuntimeRoleFreeze(): void {
   const roles = GameAPI.get_all_roles()
   for (let index = 0; index < roles.length; index += 1) {
@@ -90,6 +126,7 @@ function freezeRoleControlUnit(role: any, roleIndex: number): void {
     disableCharacterPhysics(ctrlUnit)
     state.physicsDisabled = true
   }
+  enforceCharacterZeroMotion(ctrlUnit)
   keepCharacterAtFrozenPosition(ctrlUnit, state.position)
 }
 
@@ -117,13 +154,32 @@ function getFrozenRoleState(roleIndex: number, ctrlUnit: any): FrozenRoleState {
 
 function disableCharacterPhysics(ctrlUnit: any): void {
   hideRoleControlUnit(null, ctrlUnit)
+  enforceCharacterZeroMotion(ctrlUnit)
 
+  safeCall(
+    () => {
+      ctrlUnit.set_character_creature_jump_speed_ratio(asFixed(0))
+      return true
+    },
+    { tag: "llk_zero_character_jump_speed", fallback: false, logger: print },
+  )
+
+  safeCall(
+    () => {
+      ctrlUnit.set_climb_enabled(false)
+      return true
+    },
+    { tag: "llk_disable_character_climb", fallback: false, logger: print },
+  )
+}
+
+function enforceCharacterZeroMotion(ctrlUnit: any): void {
   safeCall(
     () => {
       ctrlUnit.set_linear_velocity(ZERO_VECTOR)
       return true
     },
-    { tag: "llk_zero_character_linear_velocity_once", fallback: false, logger: print },
+    { tag: "llk_zero_character_linear_velocity", fallback: false, logger: print },
   )
 
   safeCall(
@@ -131,7 +187,7 @@ function disableCharacterPhysics(ctrlUnit: any): void {
       ctrlUnit.set_angular_velocity(ZERO_VECTOR)
       return true
     },
-    { tag: "llk_zero_character_angular_velocity_once", fallback: false, logger: print },
+    { tag: "llk_zero_character_angular_velocity", fallback: false, logger: print },
   )
 
   safeCall(
@@ -164,22 +220,6 @@ function disableCharacterPhysics(ctrlUnit: any): void {
       return true
     },
     { tag: "llk_stop_character_forced_move", fallback: false, logger: print },
-  )
-
-  safeCall(
-    () => {
-      ctrlUnit.set_character_creature_jump_speed_ratio(asFixed(0))
-      return true
-    },
-    { tag: "llk_zero_character_jump_speed", fallback: false, logger: print },
-  )
-
-  safeCall(
-    () => {
-      ctrlUnit.set_climb_enabled(false)
-      return true
-    },
-    { tag: "llk_disable_character_climb", fallback: false, logger: print },
   )
 }
 

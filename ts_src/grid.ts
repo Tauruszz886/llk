@@ -10,6 +10,7 @@ import {
   TILE_CENTER_Z,
   TILE_KIND_COUNT,
 } from "./config"
+import type { LlkLevelConfig } from "./levels"
 import type { GridBounds, LlkGridCell } from "./types"
 import { asFixed } from "./utils"
 
@@ -54,17 +55,23 @@ function drawGridLine(startX: number, startZ: number, endX: number, endZ: number
   )
 }
 
-export function createInitialLlkGridData(): LlkGridCell[][] {
+export function createInitialLlkGridData(levelConfig?: LlkLevelConfig): LlkGridCell[][] {
   const bounds = getGridBounds()
   const grid: LlkGridCell[][] = []
-  const values = createPairedGridValues()
-  let valueIndex = 0
+  const tileKindCount = levelConfig !== undefined ? levelConfig.tileKindCount : TILE_KIND_COUNT
+  const levelMap = levelConfig !== undefined ? levelConfig.map : createEmptyLevelMap()
+  let playableCount = 0
+  let emptyCount = 0
 
   for (let row = 0; row < GRID_ROWS; row += 1) {
     const rowCells: LlkGridCell[] = []
     for (let column = 0; column < GRID_COLUMNS; column += 1) {
-      const value = values[valueIndex]
-      valueIndex += 1
+      const value = levelMap[row][column]
+      if (value === EMPTY_GRID_VALUE) {
+        emptyCount += 1
+      } else {
+        playableCount += 1
+      }
       rowCells.push({
         row,
         column,
@@ -81,6 +88,7 @@ export function createInitialLlkGridData(): LlkGridCell[][] {
         stickerPitch: 0,
         clickProxyUnit: null,
         selectionEffectUnit: null,
+        selectionDropEffectUnit: null,
         selectionRangeUnits: [],
         selectionVisualToken: 0,
         tileTouchRegistered: false,
@@ -91,34 +99,22 @@ export function createInitialLlkGridData(): LlkGridCell[][] {
     grid.push(rowCells)
   }
 
-  print(`[LlkGridData] initialized rows=${GRID_ROWS} columns=${GRID_COLUMNS} cell_size=${GRID_CELL_SIZE} value_min=${EMPTY_GRID_VALUE} value_max=${TILE_KIND_COUNT} valid=${GRID_ROWS * GRID_COLUMNS - 1} empty=1`)
+  const levelText = levelConfig !== undefined ? ` level=${levelConfig.level}` : ""
+  print(`[LlkGridData] initialized${levelText} rows=${GRID_ROWS} columns=${GRID_COLUMNS} cell_size=${GRID_CELL_SIZE} value_min=${EMPTY_GRID_VALUE} value_max=${tileKindCount} playable=${playableCount} empty=${emptyCount} source=formal_map`)
   printGridValueCounts(grid)
   return grid
 }
 
-function createPairedGridValues(): number[] {
-  const totalCells = GRID_ROWS * GRID_COLUMNS
-  const validCellCount = totalCells - 1
-  const pairCount = validCellCount / 2
-  const values: number[] = []
-
-  for (let pairIndex = 0; pairIndex < pairCount; pairIndex += 1) {
-    const value = (pairIndex % TILE_KIND_COUNT) + 1
-    values.push(value)
-    values.push(value)
+function createEmptyLevelMap(): number[][] {
+  const map: number[][] = []
+  for (let row = 0; row < GRID_ROWS; row += 1) {
+    const rowValues: number[] = []
+    for (let column = 0; column < GRID_COLUMNS; column += 1) {
+      rowValues.push(EMPTY_GRID_VALUE)
+    }
+    map.push(rowValues)
   }
-  values.push(EMPTY_GRID_VALUE)
-  shuffleValues(values)
-  return values
-}
-
-function shuffleValues(values: number[]): void {
-  for (let index = values.length - 1; index > 0; index -= 1) {
-    const swapIndex = (GameAPI as any).random_int(0, index) as number
-    const value = values[index]
-    values[index] = values[swapIndex]
-    values[swapIndex] = value
-  }
+  return map
 }
 
 export function printGridValueCounts(grid: LlkGridCell[][]): void {
@@ -161,6 +157,19 @@ export function flattenGridCells(grid: LlkGridCell[][]): LlkGridCell[] {
     }
   }
   return cells
+}
+
+export function countPlayableGridCells(grid: LlkGridCell[][]): number {
+  let count = 0
+  for (let row = 0; row < grid.length; row += 1) {
+    for (let column = 0; column < grid[row].length; column += 1) {
+      const cell = grid[row][column]
+      if (cell.value !== EMPTY_GRID_VALUE) {
+        count += 1
+      }
+    }
+  }
+  return count
 }
 
 export function isSameGridCell(first: LlkGridCell, second: LlkGridCell): boolean {

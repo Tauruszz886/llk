@@ -30,6 +30,7 @@ export type LlkGridCell = {
   stickerPitch: number
   clickProxyUnit: any
   selectionEffectUnit: any
+  selectionDropEffectUnit: any
   selectionRangeUnits: any[]
   selectionVisualToken: number
   tileTouchRegistered: boolean
@@ -69,11 +70,6 @@ export type LinkPathResult = {
 }
 
 export type LinkVisualHandle = {
-  anchorUnits: any[]
-  sfxIds: any[]
   effectUnits: any[]
-  effectOuterUnits: any[]
-  effectCoreUnits: any[]
-  effectNodeUnits: any[]
   fallbackModelCreated: boolean
 }
